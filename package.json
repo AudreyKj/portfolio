@@ -1,0 +1,49 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "ammo.js": "github:kripken/ammo.js",
+    "axios": "^0.19.2",
+    "drag-controls": "^1.0.4",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "physijs-webpack": "^0.1.4",
+    "react": "^16.13.1",
+    "react-dat-gui": "^4.0.0",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "react-top-loading-bar": "^1.2.0",
+    "react-waypoint": "^9.0.2",
+    "three": "^0.114.0",
+    "three-dragcontrols": "^0.88.2",
+    "three-reflector": "^1.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "worker-loader": "^2.0.0"
+  }
+}
