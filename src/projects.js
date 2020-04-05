@@ -1,5 +1,5 @@
 import React from "react";
-import threeten_video from "./videos/threeten_compressed.mp4";
+import threeten_video from "./videos/threeten.mp4";
 import fiveforty_video from "./videos/fiveforty.mp4";
 import socialnetwork_video from "./videos/socialnetwork.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
@@ -63,22 +63,15 @@ function Projects() {
           Your browser does not support the video tag.
         </video>
         <p className="description">
-          REACT EXCHANGE APP <br /> React app where users can exchange
-          languages, services, and skills with their friends. <br />
+          EXCHANGE APP <br /> React app where users can exchange languages,
+          services, and skills with their friends. <br />
           <a
             className="website-link"
             href="https://github.com/AudreyKj/the-exchange-network"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            gitHub
-          </a>
-          <span> &nbsp;|&nbsp; </span>
-          <a
-            className="website-link"
-            href="https://the-exchange-network.herokuapp.com/"
-            target="_blank"
-          >
-            live app
+            the-exchange-network
           </a>
         </p>
       </div>
@@ -91,14 +84,15 @@ function Projects() {
         </video>
         <p className="description">
           FACE-DETECTION APP <br />
-          Selfie app made with Vue.js and face recognition API. <br /> The API
-          detects faces and indicates its assumptions on their age, gender, and
-          emotion. Users can upload screenshots and leave comments.
+          App made with Vue.js and face recognition API. <br />
+          The API detects faces and indicates their age, gender, and emotion;
+          users can upload selfies and leave comments.
           <br />
           <a
             className="website-link"
             href="https://github.com/AudreyKj/Face-dectection-app"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Face-dectection-app
           </a>
@@ -116,12 +110,13 @@ function Projects() {
           synthetic velvet is a digital, creative project that explores the
           concept of time. Each issue takes the form of a website and is themed
           around one specific hour. I've designed and developed the project's
-          second issue, which is themed around the hour 3:10 pm.
+          second issue: a creative website inspired by the time 3:10 pm.
           <br />
           <a
             className="website-link"
             href="https://www.syntheticvelvet-threeten.com/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             syntheticvelvet-threeten.com
           </a>
@@ -139,12 +134,13 @@ function Projects() {
           synthetic velvet is a digital, creative project that explores the
           concept of time. Each issue takes the form of a website and is themed
           around one specific hour. I've designed and developed the project's
-          first issue, which is themed around the hour 5:40 am.
+          first issue: a creative website inspired by the time 5:40 am.
           <br />
           <a
             className="website-link"
             href="https://www.syntheticvelvet-fiveforty.com/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             syntheticvelvet-fiveforty.com
           </a>

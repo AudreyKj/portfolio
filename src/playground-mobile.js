@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import * as THREE from "three";
-import * as Physijs from "physijs-webpack/webpack";
+//import * as Physijs from "physijs-webpack/webpack";
 import DragControls from "three-dragcontrols";
 import "./App.css";
 
-export default class Playground extends Component {
+export default class PlaygroundMobile extends Component {
   componentDidMount() {
     this.setUp();
     this.addObjects();
@@ -25,8 +25,10 @@ export default class Playground extends Component {
     const height = this.mount.clientHeight;
 
     //scene
-    this.scene = new Physijs.Scene();
-    this.scene.setGravity(new THREE.Vector3(0, -30, 0));
+    // this.scene = new Physijs.Scene();
+    // this.scene.setGravity(new THREE.Vector3(0, -30, 0));
+
+    this.scene = new THREE.Scene();
 
     //camera
     this.camera = new THREE.PerspectiveCamera(
@@ -84,19 +86,21 @@ export default class Playground extends Component {
     this.scene.add(Ambientlight);
 
     //Ground Plane
-    const groundPlane = new THREE.PlaneGeometry(1000, 1000, 20, 20);
+    const groundPlaneGeo = new THREE.PlaneGeometry(1000, 1000, 20, 20);
     const groundMat = new THREE.MeshLambertMaterial({
       transparent: true,
       opacity: 0
     });
 
+    const groundPlane = new THREE.Mesh(groundPlaneGeo, groundMat);
+
     groundPlane.visible = false;
 
-    const physMat = Physijs.createMaterial(groundMat);
-    const physMesh = new Physijs.BoxMesh(groundPlane, physMat, 0);
-    physMesh.position.y = 12;
-    physMesh.rotation.x = -0.5 * Math.PI;
-    this.scene.add(physMesh);
+    // const physMat = Physijs.createMaterial(groundMat);
+    // const physMesh = new Physijs.BoxMesh(groundPlane, physMat, 0);
+    groundPlane.position.y = 12;
+    groundPlane.rotation.x = -0.5 * Math.PI;
+    this.scene.add(groundPlane);
 
     //boxes
     const boxes = [];
@@ -116,9 +120,11 @@ export default class Playground extends Component {
         opacity: 0.8
       });
 
-      const box_material = Physijs.createMaterial(cubeMaterial, 0.5, 1.3);
+      //const box_material = Physijs.createMaterial(cubeMaterial, 0.5, 0.9);
 
-      const box = new Physijs.BoxMesh(cubeGeometry, box_material, 10);
+      //const box = new Physijs.BoxMesh(cubeGeometry, box_material, 10);
+
+      const box = new THREE.Mesh(cubeGeometry, cubeMaterial);
 
       function getRandomInt(min, max) {
         min = Math.ceil(min);
@@ -127,9 +133,11 @@ export default class Playground extends Component {
       }
 
       box.name = "box";
-      box.position.x = getRandomInt(0, 44) - 10;
-      box.position.y = getRandomInt(12, 70) + 15;
-      box.position.z = Math.random() * 10 - 5;
+      box.position.x = getRandomInt(0, 44) - 20;
+      box.position.y = getRandomInt(12, 70) + 17;
+      box.position.z = Math.random() * 10 - 10;
+
+      box.rotation.z = Math.PI / 2;
 
       this.scene.add(box);
       boxes.push(box);
@@ -139,33 +147,79 @@ export default class Playground extends Component {
     addBox();
     addBox();
     addBox();
-    addBox();
-    addBox();
-    addBox();
+
     addBox();
     addBox();
     addBox();
     addBox();
 
-    // const addBox2 = () => {
-    //   const cubeGeometry2 = new THREE.BoxGeometry(0.1, 7, 7);
+    const addBox2 = () => {
+      const cubeGeometry2 = new THREE.BoxGeometry(0.1, 7, 7);
+
+      //gradient texture
+      const texture2 = new THREE.Texture(this.generateTexture());
+      texture2.needsUpdate = true;
+
+      // material
+      const cubeMaterial2 = new THREE.MeshBasicMaterial({
+        map: texture2,
+        transparent: true,
+        opacity: 0.8
+      });
+
+      //const box_material2 = Physijs.createMaterial(cubeMaterial2, 1, 0.9);
+
+      //const box2 = new Physijs.BoxMesh(cubeGeometry2, box_material2, 10);
+
+      const box2 = new THREE.Mesh(cubeGeometry2, cubeMaterial2);
+
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        min += 5;
+        max += 5;
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+
+      box2.name = "box2";
+      box2.position.x = getRandomInt(-35, 0);
+      box2.position.y = getRandomInt(12, 50);
+      box2.position.z = getRandomInt(-1, 10);
+
+      box2.rotation.z = Math.PI / 2;
+
+      this.scene.add(box2);
+      boxes.push(box2);
+    };
+
+    addBox2();
+    addBox2();
+    addBox2();
+    addBox2();
+    addBox2();
+    addBox2();
+
+    // FRICTION PLANES
+    // const addBoxFriction = () => {
+    //   const cubeGeometryFriction = new THREE.BoxGeometry(0.1, 7, 7);
     //
     //   //gradient texture
-    //   const texture2 = new THREE.Texture(this.generateTexture());
-    //   const textureImage2 = texture2.image;
-    //   texture2.needsUpdate = true;
+    //   const texture3 = new THREE.Texture(this.generateTexture());
+    //   const textureImage3 = texture3.image;
+    //   texture3.needsUpdate = true;
     //
     //   // material
-    //   const cubeMaterial2 = new THREE.MeshBasicMaterial({
-    //     map: texture2,
+    //   const cubeMaterialFriction = new THREE.MeshBasicMaterial({
+    //     map: texture3,
     //     overdraw: 0.5,
     //     transparent: true,
     //     opacity: 0.8
     //   });
     //
-    //   const box_material2 = Physijs.createMaterial(cubeMaterial2, 0, 0);
-    //
-    //   const box2 = new Physijs.BoxMesh(cubeGeometry2, box_material2, 10);
+    //   const boxFriction = new THREE.Mesh(
+    //     cubeGeometryFriction,
+    //     cubeMaterialFriction
+    //   );
     //
     //   function getRandomInt(min, max) {
     //     min = Math.ceil(min);
@@ -173,73 +227,23 @@ export default class Playground extends Component {
     //     return Math.floor(Math.random() * (max - min)) + min;
     //   }
     //
-    //   box2.name = "box2";
-    //   box2.position.x = getRandomInt(-35, 0);
-    //   box2.position.y = getRandomInt(12, 50);
-    //   box2.position.z = getRandomInt(-1, 10);
+    //   boxFriction.name = "box";
+    //   boxFriction.position.x = getRandomInt(0, 44) - 10;
+    //   boxFriction.position.y = getRandomInt(12, 70) + 15;
+    //   boxFriction.position.z = Math.random() * 10 - 5;
     //
-    //   this.scene.add(box2);
-    //   boxes.push(box2);
+    //   boxFriction.rotation.z = Math.PI / 2;
+    //
+    //   this.scene.add(boxFriction);
+    //   boxes.push(boxFriction);
     // };
     //
-    // addBox2();
-    // addBox2();
-    // addBox2();
-    // addBox2();
-    // addBox2();
-    // addBox2();
-    // addBox2();
-    // addBox2();
-    // addBox2();
-
-    //FRICTION PLANES
-    const addBoxFriction = () => {
-      const cubeGeometryFriction = new THREE.BoxGeometry(0.1, 7, 7);
-
-      //gradient texture
-      const texture3 = new THREE.Texture(this.generateTexture());
-      texture3.needsUpdate = true;
-
-      // material
-      const cubeMaterialFriction = new THREE.MeshBasicMaterial({
-        map: texture3,
-        transparent: true,
-        opacity: 0.8
-      });
-
-      const box_materialFriction = Physijs.createMaterial(
-        cubeMaterialFriction,
-        0.5,
-        1
-      );
-
-      const boxFriction = new Physijs.BoxMesh(
-        cubeGeometryFriction,
-        box_materialFriction,
-        10
-      );
-
-      function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min;
-      }
-
-      boxFriction.name = "box";
-      boxFriction.position.x = getRandomInt(0, 44) - 10;
-      boxFriction.position.y = getRandomInt(12, 70) + 15;
-      boxFriction.position.z = Math.random() * 10 - 5;
-
-      this.scene.add(boxFriction);
-      boxes.push(boxFriction);
-    };
-
-    addBoxFriction();
-    addBoxFriction();
-    addBoxFriction();
-    addBoxFriction();
-    addBoxFriction();
-    addBoxFriction();
+    // addBoxFriction();
+    // addBoxFriction();
+    // addBoxFriction();
+    // // addBoxFriction();
+    // // addBoxFriction();
+    // // addBoxFriction();
 
     var dragControls = new DragControls(
       boxes,
@@ -247,25 +251,17 @@ export default class Playground extends Component {
       this.renderer.domElement
     );
 
-    dragControls.addEventListener("dragstart", function(e) {
-      e.object.__dirtyRotation = true;
-      e.object.__dirtyPosition = true;
-    });
+    dragControls.addEventListener("dragstart", function(e) {});
 
-    dragControls.addEventListener("drag", function(e) {
-      e.object.__dirtyRotation = true;
-      e.object.__dirtyPosition = true;
-    });
+    dragControls.addEventListener("drag", function(e) {});
 
     dragControls.addEventListener("dragend", function(e) {
-      e.object.__dirtyPosition = true;
-      e.object.setLinearVelocity(new THREE.Vector3(0, 0, 0));
-      e.object.setAngularVelocity(new THREE.Vector3(0, 0, 0));
+      console.log("e.object.position - drag", e.object.position);
     });
   };
 
   animation = () => {
-    this.scene.simulate();
+    //this.scene.simulate();
     this.renderer.render(this.scene, this.camera);
     this.requestID = window.requestAnimationFrame(this.animation);
   };

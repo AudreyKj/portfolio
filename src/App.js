@@ -1,40 +1,29 @@
 import React, { useState, useEffect } from "react";
 import Projects from "./projects.js";
 import Playground from "./playground.js";
+import PlaygroundMobile from "./playground-mobile.js";
 import Weather from "./weather.js";
 import "./App.css";
 
 function App() {
   const [state, setState] = useState({
-    homelink: false,
-    projectlink: true,
-    temp: "",
-    weather: "",
     isLoaded: true
   });
 
   //disabling eslint to pass an empty array to useEffect
   /* eslint-disable */
   useEffect(() => {
-    console.log("state before useEffect", state);
-
     setTimeout(() => {
       setState(state => {
         return {
-          isLoaded: false,
-          homeThreeVisible: true,
-          homelink: false,
-          projectlink: true
+          isLoaded: false
         };
       });
-
-      console.log("state after useEffect", state);
-    }, 1500);
+    }, 2000);
   }, []);
 
   return (
     <div className="App">
-      <div className="circle"></div>
       {state.isLoaded && <div className="loading"></div>}
 
       <header className="App-header">
@@ -44,6 +33,7 @@ function App() {
             className="link-header"
             href="https://www.linkedin.com/in/audreykadjar/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             LINKEDIN
           </a>
@@ -52,6 +42,7 @@ function App() {
             className="link-header"
             href="https://github.com/AudreyKj"
             target="_blank"
+            rel="noopener noreferrer"
           >
             GITHUB
           </a>
@@ -61,27 +52,37 @@ function App() {
           </a>
         </span>
       </header>
-      <Weather> </Weather>
 
       <div className="home" id="home">
+        <Weather> </Weather>
         <a className="links-home" href="#projects">
           PROJECTS
         </a>
         <Playground></Playground>
-        <div className="gradient"></div>
+      </div>
+
+      <div className="home-mobile" id="home-mobile">
+        <Weather> </Weather>
+        <a className="links-home" href="#projects">
+          PROJECTS
+        </a>
+        <PlaygroundMobile></PlaygroundMobile>
       </div>
 
       <div className="projects" id="projects">
-        <a className="links-home" href="#home">
+        <a className="links-home-home" href="#home">
           HOME
         </a>
         <Projects></Projects>
         <a className="top" href="#home">
           TOP
         </a>
+        <a className="top-mobile" href="#home-mobile">
+          TOP
+        </a>
       </div>
 
-      <footer> last updated on FRI APRIL 3, 2020, 17:54 </footer>
+      <footer> last updated on SUN APRIL 5, 2020, 11:41 </footer>
     </div>
   );
 }

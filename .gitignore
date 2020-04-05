@@ -14,11 +14,9 @@
 # testing
 /coverage
 
-
 /build
-/public
-/videos
 /src/videos
+/videos/
 
 # misc
 .DS_Store

@@ -13,10 +13,9 @@ function Weather() {
   useEffect(() => {
     axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=berlin&appid=${process.env.REACT_APP_API_KEY}&units=metric`
+        `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=berlin&appid=${process.env.REACT_APP_API_KEY}&units=metric`
       )
       .then(response => {
-        console.log("response", response);
         setState({
           ...state,
           temp: response.data.main.temp,
@@ -29,9 +28,15 @@ function Weather() {
   }, []);
 
   return (
-    <span className="weather">
-      it's {state.temp}°C in Berlin right now...{state.weather}
-    </span>
+    <>
+      <span className="weather">
+        it's {state.temp}°C in Berlin right now...{state.weather}
+      </span>
+
+      <span className="weather-mobile">
+        it's {state.temp}°C in Berlin right now...{state.weather}
+      </span>
+    </>
   );
 }
 
