@@ -7,7 +7,9 @@ function Weather() {
   /* eslint-disable */
   const [state, setState] = useState({
     temp: "",
-    weather: ""
+    weather: "",
+    weatherReady: false,
+    weatherReadyMobile: false
   });
 
   useEffect(() => {
@@ -19,7 +21,9 @@ function Weather() {
         setState({
           ...state,
           temp: response.data.main.temp,
-          weather: response.data.weather[0].description
+          weather: response.data.weather[0].description,
+          weatherReady: true,
+          weatherReadyMobile: true
         });
       })
       .catch(error => {
@@ -28,15 +32,19 @@ function Weather() {
   }, []);
 
   return (
-    <>
-      <span className="weather">
-        it's {state.temp}°C in Berlin right now...{state.weather}
-      </span>
+    <div>
+      {state.weatherReady && (
+        <span className="weather">
+          it's {state.temp}°C in Berlin right now...{state.weather}
+        </span>
+      )}
 
-      <span className="weather-mobile">
-        it's {state.temp}°C in Berlin right now...{state.weather}
-      </span>
-    </>
+      {state.weatherReadyMobile && (
+        <span className="weather-mobile">
+          it's {state.temp}°C in Berlin right now...{state.weather}
+        </span>
+      )}
+    </div>
   );
 }
 

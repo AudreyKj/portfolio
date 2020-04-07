@@ -375,7 +375,8 @@ a.website-link:hover {
 }
 
 video {
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 1px 1px 19px 2px #333;
+  box-shadow: 1px 1px 19px 2px #333;
   width: 700px;
   height: auto;
 }
