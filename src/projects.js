@@ -60,6 +60,33 @@ function Projects() {
 
   return (
     <div className="projects-wrapper">
+      <Waypoint onEnter={() => video1play()} onLeave={() => video1stop()} />
+      <div className="project-2">
+        <video
+          className="video1"
+          width="700"
+          height="460"
+          muted
+          playsInline
+          loop
+        >
+          <source src={socialnetwork_video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p className="description">
+          EXCHANGE APP <br /> React app where users can exchange languages,
+          services, and skills with their friends. <br />
+          <a
+            className="website-link"
+            href="https://the-exchange-network.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            the-exchange-network
+          </a>
+        </p>
+      </div>
+
       <Waypoint onEnter={() => video5play()} onLeave={() => video5stop()} />
       <div className="project-2">
         <video
@@ -84,33 +111,6 @@ function Projects() {
             rel="noopener noreferrer"
           >
             corona-emotions-club
-          </a>
-        </p>
-      </div>
-
-      <Waypoint onEnter={() => video1play()} onLeave={() => video1stop()} />
-      <div className="project-2">
-        <video
-          className="video1"
-          width="700"
-          height="460"
-          muted
-          playsInline
-          loop
-        >
-          <source src={socialnetwork_video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p className="description">
-          EXCHANGE APP <br /> React app where users can exchange languages,
-          services, and skills with their friends. <br />
-          <a
-            className="website-link"
-            href="https://the-exchange-network.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            the-exchange-network
           </a>
         </p>
       </div>
