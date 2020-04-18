@@ -23,6 +23,15 @@ body {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 div.loading {
   width: 100%;
   min-height: 100vh;
@@ -78,6 +87,8 @@ span.weather {
   left: 20rem;
   padding: 5px;
   font-style: italic;
+
+  animation: fadeIn 2.5s;
 }
 
 span.weather-mobile {
@@ -90,6 +101,8 @@ span.weather-mobile {
 
   display: none;
   z-index: 1000;
+
+  animation: fadeIn 2s;
 }
 
 @media (min-width: 1900px) {
