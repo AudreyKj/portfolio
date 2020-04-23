@@ -3,7 +3,7 @@ import threeten_video from "./videos/threeten.mp4";
 import fiveforty_video from "./videos/fiveforty.mp4";
 import socialnetwork_video from "./videos/socialnetwork.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
-import corona_video from "./videos/covid.mp4";
+import corona_video from "./videos/covid-emotions.mp4";
 import { Waypoint } from "react-waypoint";
 import "./App.css";
 
@@ -60,6 +60,34 @@ function Projects() {
 
   return (
     <div className="projects-wrapper">
+      <Waypoint onEnter={() => video5play()} onLeave={() => video5stop()} />
+      <div className="project-2">
+        <video
+          className="video5"
+          width="700"
+          height="460"
+          muted
+          playsInline
+          loop
+        >
+          <source src={corona_video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p className="description">
+          CORONA EMOTIONS CLUB <br /> React app where users share their personal
+          experiences of the COVID-19 outbreak and browse through others'
+          submissions. <br />
+          <a
+            className="website-link"
+            href="https://corona-emotions.club/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            corona-emotions.club
+          </a>
+        </p>
+      </div>
+
       <Waypoint onEnter={() => video1play()} onLeave={() => video1stop()} />
       <div className="project-2">
         <video
@@ -87,34 +115,6 @@ function Projects() {
         </p>
       </div>
 
-      <Waypoint onEnter={() => video5play()} onLeave={() => video5stop()} />
-      <div className="project-2">
-        <video
-          className="video5"
-          width="700"
-          height="460"
-          muted
-          playsInline
-          loop
-        >
-          <source src={corona_video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p className="description">
-          CORONA EMOTIONS CLUB <br /> React app where users share their personal
-          experiences of the COVID-19 outbreak and browse through others'
-          submissions. <br />
-          <a
-            className="website-link"
-            href="https://corona-emotions.club/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            corona-emotions-club
-          </a>
-        </p>
-      </div>
-
       <Waypoint onEnter={() => video2play()} onLeave={() => video2stop()} />
       <div className="project-2">
         <video className="video2" muted playsInline loop>
@@ -128,7 +128,7 @@ function Projects() {
           <br />
           <a
             className="website-link"
-            href="https://github.com/AudreyKj/Face-dectection-app"
+            href="https://face-face-face.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
