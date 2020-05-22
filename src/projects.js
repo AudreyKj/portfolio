@@ -4,6 +4,7 @@ import fiveforty_video from "./videos/fiveforty.mp4";
 import socialnetwork_video from "./videos/socialnetwork.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
 import corona_video from "./videos/covid-emotions.mp4";
+import sign_for_cause_video from "./videos/sign-for-cause_1.mp4";
 import { Waypoint } from "react-waypoint";
 import "./App.css";
 
@@ -56,6 +57,16 @@ function Projects() {
   const video5stop = () => {
     document.querySelector(".video5").pause();
     document.querySelector(".video5").currentTime = 0;
+  };
+
+  //VIDEO6
+  const video6play = () => {
+    document.querySelector(".video6").play();
+  };
+
+  const video6stop = () => {
+    document.querySelector(".video6").pause();
+    document.querySelector(".video6").currentTime = 0;
   };
 
   return (
@@ -137,6 +148,30 @@ function Projects() {
         </p>
       </div>
 
+      <Waypoint onEnter={() => video6play()} onLeave={() => video6stop()} />
+      <div className="project-2">
+        <video className="video6" muted playsInline loop>
+          <source src={sign_for_cause_video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p className="description">
+          SIGN FOR CAUSE APP <br />
+          App where users can register, create a profile, and sign for a cause.
+          <br />
+          The homepage features a customizable design where users can choose the
+          background-color.
+          <br />
+          <a
+            className="website-link"
+            href="https://sign-for-cause.herokuapp.com/petition"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            sign-for-cause-app
+          </a>
+        </p>
+      </div>
+
       <Waypoint onEnter={() => video3play()} onLeave={() => video3stop()} />
       <div className="project-2">
         <video className="video3" muted playsInline loop>
@@ -145,7 +180,7 @@ function Projects() {
         </video>
         <p className="description">
           ISSUE II OF MAGAZINE SYNTHETIC VELVET <br />
-          synthetic velvet is a digital, creative project that explores the
+          synthetic velvet is a digital, creative project which explores the
           concept of time. Each issue takes the form of a website and is themed
           around one specific hour. I've designed and developed the project's
           second issue: a creative website inspired by the time 3:10 pm.
@@ -169,7 +204,7 @@ function Projects() {
         </video>
         <p className="description">
           ISSUE I OF MAGAZINE SYNTHETIC VELVET <br />
-          synthetic velvet is a digital, creative project that explores the
+          synthetic velvet is a digital, creative project which explores the
           concept of time. Each issue takes the form of a website and is themed
           around one specific hour. I've designed and developed the project's
           first issue: a creative website inspired by the time 5:40 am.

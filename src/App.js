@@ -10,7 +10,6 @@ function App() {
     isLoaded: true
   });
 
-  //disabling eslint to pass an empty array to useEffect
   /* eslint-disable */
   useEffect(() => {
     setTimeout(() => {
