@@ -81,7 +81,7 @@ function App() {
         </a>
       </div>
 
-      <footer> last updated on SAT APRIL 18, 2020, 21:51 </footer>
+      <footer> last updated on FRI MAY 22, 2020, 23:14 </footer>
     </div>
   );
 }
