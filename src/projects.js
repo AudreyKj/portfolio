@@ -3,7 +3,7 @@ import threeten_video from "./videos/threeten.mp4";
 import fiveforty_video from "./videos/fiveforty.mp4";
 import socialnetwork_video from "./videos/socialnetwork.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
-import corona_video from "./videos/covid-emotions.mp4";
+import corona_video from "./videos/covid-emotions-new.mp4";
 import sign_for_cause_video from "./videos/sign-for-cause_1.mp4";
 import { Waypoint } from "react-waypoint";
 import "./App.css";
