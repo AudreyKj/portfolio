@@ -5,6 +5,7 @@ import socialnetwork_video from "./videos/socialnetwork.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
 import corona_video from "./videos/covid-emotions-new.mp4";
 import sign_for_cause_video from "./videos/sign-for-cause_1.mp4";
+import color_spot_video from "./videos/color-spot-2.mp4";
 import { Waypoint } from "react-waypoint";
 import "./App.css";
 
@@ -69,8 +70,49 @@ function Projects() {
     document.querySelector(".video6").currentTime = 0;
   };
 
+  //VIDEO7
+  const video7play = () => {
+    document.querySelector(".video7").play();
+  };
+
+  const video7stop = () => {
+    document.querySelector(".video7").pause();
+    document.querySelector(".video7").currentTime = 0;
+  };
+
   return (
     <div className="projects-wrapper">
+      <Waypoint onEnter={() => video7play()} onLeave={() => video7stop()} />
+      <div className="project-2">
+        <video
+          className="video7"
+          width="700"
+          height="460"
+          muted
+          playsInline
+          loop
+        >
+          <source src={color_spot_video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p className="description">
+          COLOR SPOT <br /> React app with color API and data visualization
+          <br />
+          Users can detect the colors in images as well as save and categorize
+          color palettes.
+          <br /> An "admin" page visualizes the data from the app's users.
+          <br />
+          <a
+            className="website-link"
+            href="https://color-spot.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            color-spot-app
+          </a>
+        </p>
+      </div>
+
       <Waypoint onEnter={() => video5play()} onLeave={() => video5stop()} />
       <div className="project-2">
         <video
