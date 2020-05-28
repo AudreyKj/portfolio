@@ -5,7 +5,7 @@ import socialnetwork_video from "./videos/socialnetwork.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
 import corona_video from "./videos/covid-emotions-new.mp4";
 import sign_for_cause_video from "./videos/sign-for-cause_1.mp4";
-import color_spot_video from "./videos/color-spot-2.mp4";
+import color_spot_video from "./videos/color-spot-3.mp4";
 import { Waypoint } from "react-waypoint";
 import "./App.css";
 
