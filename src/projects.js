@@ -108,7 +108,16 @@ function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            color-spot-app
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/color-spot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         </p>
       </div>
@@ -136,7 +145,16 @@ function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            corona-emotions.club
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/corona-emotions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         </p>
       </div>
@@ -163,7 +181,16 @@ function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            the-exchange-network
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/the-exchange-network"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         </p>
       </div>
@@ -185,7 +212,16 @@ function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Face-dectection-app
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/Face-dectection-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         </p>
       </div>
@@ -209,7 +245,16 @@ function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            sign-for-cause-app
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/sign-for-cause"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         </p>
       </div>
@@ -221,8 +266,8 @@ function Projects() {
           Your browser does not support the video tag.
         </video>
         <p className="description">
-          ISSUE II OF MAGAZINE SYNTHETIC VELVET <br />
-          synthetic velvet is a digital, creative project which explores the
+          ISSUE II OF CREATIVE MAGAZINE <br />
+          synthetic velvet is an online, creative magazine which explores the
           concept of time. Each issue takes the form of a website and is themed
           around one specific hour. I've designed and developed the project's
           second issue: a creative website inspired by the time 3:10 pm.
@@ -233,7 +278,16 @@ function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            syntheticvelvet-threeten.com
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/Three-Ten"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         </p>
       </div>
@@ -245,8 +299,8 @@ function Projects() {
           Your browser does not support the video tag.
         </video>
         <p className="description">
-          ISSUE I OF MAGAZINE SYNTHETIC VELVET <br />
-          synthetic velvet is a digital, creative project which explores the
+          ISSUE I OF CREATIVE MAGAZINE <br />
+          synthetic velvet is an online, creative magazine which explores the
           concept of time. Each issue takes the form of a website and is themed
           around one specific hour. I've designed and developed the project's
           first issue: a creative website inspired by the time 5:40 am.
@@ -257,7 +311,16 @@ function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            syntheticvelvet-fiveforty.com
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/Five-Forty"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         </p>
       </div>
