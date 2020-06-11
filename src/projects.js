@@ -98,8 +98,8 @@ function Projects() {
         <p className="description">
           COLOR SPOT <br /> React app with color API and data visualization
           <br />
-          Users can detect the colors in images as well as save and categorize
-          color palettes.
+          Users can detect colors in images as well as save and categorize color
+          palettes.
           <br /> An "admin" page visualizes the data from the app's users.
           <br />
           <a
@@ -136,9 +136,12 @@ function Projects() {
           Your browser does not support the video tag.
         </video>
         <p className="description">
-          CORONA EMOTIONS CLUB <br /> React app where users share their personal
-          experiences of the COVID-19 outbreak and browse through others'
-          submissions. <br />
+          CORONA EMOTIONS CLUB <br /> React app with submit feature and data
+          visualization <br />
+          Users share their personal experiences of the COVID-19 outbreak and
+          browse through others' submissions. A dashboard visualizes the data of
+          the submissions by date and location.
+          <br />
           <a
             className="website-link"
             href="https://corona-emotions.club/"
@@ -266,7 +269,7 @@ function Projects() {
           Your browser does not support the video tag.
         </video>
         <p className="description">
-          ISSUE II OF CREATIVE MAGAZINE <br />
+          WEBSITE FOR CREATIVE MAGAZINE (ISSUE II) <br />
           synthetic velvet is an online, creative magazine which explores the
           concept of time. Each issue takes the form of a website and is themed
           around one specific hour. I've designed and developed the project's
@@ -299,7 +302,8 @@ function Projects() {
           Your browser does not support the video tag.
         </video>
         <p className="description">
-          ISSUE I OF CREATIVE MAGAZINE <br />
+          WEBSITE FOR CREATIVE MAGAZINE (ISSUE I)
+          <br />
           synthetic velvet is an online, creative magazine which explores the
           concept of time. Each issue takes the form of a website and is themed
           around one specific hour. I've designed and developed the project's
