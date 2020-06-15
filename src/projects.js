@@ -237,9 +237,19 @@ function Projects() {
         </video>
         <p className="description">
           SIGN FOR CAUSE APP <br />
-          App where users can register, create a profile, and sign for a cause.
+          App inspired by&nbsp;
+          <a
+            className="links-text"
+            href="https://www.change.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            change.org.
+          </a>
           <br />
-          The homepage features a customizable design where users can choose the
+          Users register, create a profile, and sign for a cause.
+          <br />
+          The homepage's customizable design enables users to choose the
           background-color.
           <br />
           <a

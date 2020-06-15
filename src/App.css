@@ -378,6 +378,13 @@ p.description {
   line-height: 1.5;
 }
 
+a.links-text,
+a.links-text:hover,
+a.links-text:visited {
+  text-decoration: underline;
+  color: #333;
+}
+
 a.website-link,
 a.website-link:visited {
   color: #4f8aab;
