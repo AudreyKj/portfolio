@@ -139,7 +139,7 @@ function Projects() {
           CORONA EMOTIONS CLUB <br />
           Users share their personal experiences of the COVID-19 outbreak and
           browse through others' submissions. A dashboard visualizes the data of
-          submissions by date and location. App made with Node.js + React.
+          submissions. <br /> App made with Node.js + React.
           <br />
           <a
             className="website-link"

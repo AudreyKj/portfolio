@@ -47,6 +47,7 @@ function App() {
       <header className="App-header">
         <span className="title">
           AUDREY KADJAR <br /> BERLIN-BASED <br />
+          WEB DEVELOPER <br />
           <a
             className="link-header"
             href="https://www.linkedin.com/in/audreykadjar/"
