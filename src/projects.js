@@ -136,11 +136,10 @@ function Projects() {
           Your browser does not support the video tag.
         </video>
         <p className="description">
-          CORONA EMOTIONS CLUB <br /> React app with submit feature and data
-          visualization <br />
+          CORONA EMOTIONS CLUB <br />
           Users share their personal experiences of the COVID-19 outbreak and
           browse through others' submissions. A dashboard visualizes the data of
-          the submissions by date and location.
+          submissions by date and location. App made with Node.js, React, SQL.
           <br />
           <a
             className="website-link"
