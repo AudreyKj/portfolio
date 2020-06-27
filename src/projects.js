@@ -80,28 +80,30 @@ function Projects() {
     document.querySelector(".video7").currentTime = 0;
   };
 
+  //  <Waypoint onEnter={() => video7play()} onLeave={() => video7stop()} />
+
   return (
     <div className="projects-wrapper">
-      <Waypoint onEnter={() => video7play()} onLeave={() => video7stop()} />
-      <div className="project-2">
-        <video
-          className="video7"
-          width="700"
-          height="460"
-          muted
-          playsInline
-          loop
-        >
-          <source src={color_spot_video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className="project-2" id="colorspot">
+        <div className="image-project-container">
+          <img className="image-project" src="color-spot.png" alt="colorspot" />
+          <img
+            className="image-project"
+            src="color-spot-1.png"
+            alt="colorspot"
+          />
+          <img
+            className="image-project"
+            src="color-spot-2.png"
+            alt="colorspot"
+          />
+        </div>
         <p className="description">
-          COLOR SPOT <br /> React app with color API and data visualization
+          COLOR SPOT APP <br />
+          Users detect colors in images and save color palettes.
+          <br /> An "admin" page visualizes data from the app's users.
           <br />
-          Users can detect colors in images as well as save and categorize color
-          palettes.
-          <br /> An "admin" page visualizes the data from the app's users.
-          <br />
+          Tech: React, Node.js, chart.js, PostgreSQL <br />
           <a
             className="website-link"
             href="https://color-spot.herokuapp.com/"
@@ -123,7 +125,7 @@ function Projects() {
       </div>
 
       <Waypoint onEnter={() => video5play()} onLeave={() => video5stop()} />
-      <div className="project-2">
+      <div className="project-2" id="covid19">
         <video
           className="video5"
           width="700"
@@ -136,7 +138,7 @@ function Projects() {
           Your browser does not support the video tag.
         </video>
         <p className="description">
-          CORONA EMOTIONS CLUB <br />
+          COVID-19 APP <br />
           Users share their personal experiences of the COVID-19 outbreak and
           browse through others' submissions. A dashboard visualizes the data of
           submissions. <br /> App made with Node.js + React.
@@ -162,7 +164,7 @@ function Projects() {
       </div>
 
       <Waypoint onEnter={() => video1play()} onLeave={() => video1stop()} />
-      <div className="project-2">
+      <div className="project-2" id="exchange">
         <video
           className="video1"
           width="700"
@@ -336,6 +338,16 @@ function Projects() {
             GitHub
           </a>
         </p>
+      </div>
+      <div className="project-last footer">
+        <ul>
+          INDEX <br />
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
+        LinkedIn GitHub Email: audreykadjar@gmail.com
       </div>
     </div>
   );

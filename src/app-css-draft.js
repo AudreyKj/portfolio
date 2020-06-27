@@ -9,7 +9,6 @@ body {
   font-family: Arial, Helvetica, "sans-serif";
   /* background: linear-gradient(to top, #cfd9df 0%, #4f8aab 100%); */
   background-color: #f7f7f7;
-  font-weight: 300;
   overflow-x: hidden;
   color: #333;
   min-height: 100vh;
@@ -38,11 +37,11 @@ div.loading {
   width: 100%;
   min-height: 100vh;
 
-  background: #000;
+  background: linear-gradient(to top, #4f8aab 30%, #cfd9df 100%);
   z-index: 1000;
   position: fixed;
 
-  animation: fadeOff 3s;
+  animation: fadeOff 2s;
 }
 
 /* header + weather api */
@@ -51,7 +50,7 @@ header {
 }
 
 span.title {
-  font-size: 1.3rem;
+  font-size: 1rem;
   position: fixed;
   top: 0.5rem;
   left: 0.5rem;
@@ -152,58 +151,17 @@ div#board-canvas {
 }
 
 div.home {
-  background-color: #f7f7f7;
+  background: linear-gradient(to top, #4f8aab 30%, #cfd9df 100%);
   width: 100%;
   min-height: 100vh;
-
-  display: flex;
-  align-items: center;
 }
 
-div.projects-index {
-  width: 100%;
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 3rem;
-
-  position: absolute;
-  bottom: 90px;
-  line-height: 1.5;
-}
-
-.project {
-  font-size: 2rem;
-}
-
-div.circle {
-  width: 20px;
-  height: 20px;
-  background-color: #333;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 30px;
-}
-
-/* @media (max-width: 700px) {
+@media (max-width: 700px) {
   div.home {
     display: none;
   }
-} */
-
-header {
-  position: absolute;
-  top: 5%;
-  font-size: 3rem;
-  width: 100%;
-  margin-left: 50px;
-  margin-right: 50px;
-  display: flex;
-  align-items: center;
 }
 
-span.about-line {
-  width: 60%;
-}
 /* div.gradient {
   height: 8rem;
   background: linear-gradient(to top, #cfd9df 30%, #4f8aab 100%);
@@ -212,7 +170,7 @@ span.about-line {
 } */
 
 /* mobile  */
-/* div.home-mobile {
+div.home-mobile {
   background: linear-gradient(to top, #4f8aab 30%, #cfd9df 100%);
   width: 100%;
   min-height: 100vh;
@@ -224,22 +182,21 @@ span.about-line {
   div.home-mobile {
     display: block;
   }
-} */
+}
 
 /* projects */
 div.projects {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  /* background-color: #cfd9df; */
-  background-color: #f7f7f7;
+  background-color: #cfd9df;
 }
 
 /* nav */
 a.links-home {
   position: absolute;
-  top: 10px;
-  right: 120px;
+  right: 1rem;
+  top: 0.5rem;
   font-size: 2rem;
   cursor: pointer;
   z-index: 5000;
@@ -342,24 +299,6 @@ a.links-home-home:hover {
   color: white;
 }
 
-img.color-spot {
-  display: none;
-  width: 400px;
-  height: auto;
-  position: absolute;
-  /* top: 20%; */
-  /* top: 15%; */
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, 50%);
-
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
-
 /* projects */
 div.projects-wrapper {
   width: 100%;
@@ -376,37 +315,6 @@ div.projects-wrapper {
   }
 }
 
-img.image-project {
-  width: 470px;
-  height: auto;
-  margin-left: 20px;
-  margin-right: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-div.image-project-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-#colorspot {
-  background-color: #85948b;
-}
-
-#covid19 {
-  background-color: #ae9f9e;
-}
-
-#exchange {
-  background-color: #83a3a2;
-}
-
 div.project {
   margin-top: 8%;
   display: flex;
@@ -418,12 +326,12 @@ div.project {
 }
 
 div.project-2 {
+  margin-top: 3%;
   display: flex;
   width: 100%;
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
-  padding-top: 150px;
 }
 
 div.project-last {
@@ -466,8 +374,8 @@ img.project-1 {
 p.description {
   width: 60%;
   text-align: center;
-  font-size: 1.9rem;
-  color: #000;
+  font-size: 1.4rem;
+  color: #333;
   line-height: 1.5;
 }
 
@@ -480,7 +388,7 @@ a.links-text:visited {
 
 a.website-link,
 a.website-link:visited {
-  color: #000;
+  color: #4f8aab;
 }
 
 a.website-link:hover {
@@ -522,17 +430,17 @@ video {
   }
 }
 
-/* div.circle-logo {
-  background-color: #000;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
 /* footer */
-div.footer {
-  background-color: #333;
+footer {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 745px) {
+  footer {
+    display: none;
+  }
 }

@@ -19,8 +19,18 @@ function App() {
           isLoaded: false
         };
       });
-    }, 2000);
+    }, 3000);
   }, []);
+
+  const displayColorSpot = () => {
+    const colorspotImg = document.querySelector("img.color-spot");
+    colorspotImg.style.display = "block";
+  };
+
+  const hideColorSpot = () => {
+    const colorspotImg = document.querySelector("img.color-spot");
+    colorspotImg.style.display = "none";
+  };
 
   return (
     <div className="App">
@@ -42,50 +52,41 @@ function App() {
         <meta property="og:image:url" content="preview.jpg" />
       </Helmet>
 
-      {state.isLoaded && <div className="loading"></div>}
-
-      <header className="App-header">
-        <span className="title">
-          AUDREY KADJAR <br /> BERLIN-BASED <br />
-          WEB DEVELOPER <br />
-          <a
-            className="link-header"
-            href="https://www.linkedin.com/in/audreykadjar/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LINKEDIN
-          </a>
-          <span> &nbsp;|&nbsp; </span>
-          <a
-            className="link-header"
-            href="https://github.com/AudreyKj"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GITHUB
-          </a>
-          <br />
-          <a className="link-header" href="mailto:audreykadjar@gmail.com">
-            audreykadjar@gmail.com
-          </a>
-        </span>
-      </header>
-
       <div className="home" id="home">
-        <Weather> </Weather>
-        <a className="links-home" href="#projects">
-          PROJECTS
-        </a>
-        <Playground></Playground>
-      </div>
+        <div className="circle-logo"> </div>
+        {state.isLoaded && <div className="loading"></div>}
+        <header>
+          <a className="links-home" href="#projects">
+            INFO & CONTACT
+          </a>
 
-      <div className="home-mobile" id="home-mobile">
-        <Weather> </Weather>
-        <a className="links-home" href="#projects">
-          PROJECTS
-        </a>
-        <PlaygroundMobile></PlaygroundMobile>
+          <span class="about-line">
+            Audrey Kadjar is a Web Developer based in Berlin, Germany.
+          </span>
+        </header>
+        <img className="color-spot" src="color-spot.png" alt="color-spot" />
+
+        <div class="projects-index">
+          <span className="project"> PROJECTS </span>
+          <br />
+          <a
+            href="#colorspot"
+            onMouseEnter={displayColorSpot}
+            onMouseLeave={hideColorSpot}
+          >
+            COLOR SPOT APP
+          </a>
+          <div className="circle"> </div>
+          <span> COVID 19 APP </span> <div className="circle"> </div>
+          <span> EXCHANGE APP </span> <div className="circle"> </div>
+          <br />
+          <span> FACE-DETECTION APP </span> <div className="circle"> </div>
+          <span> SIGN FOR A CAUSE APP </span> <div className="circle"> </div>
+          <br />
+          <span> CREATIVE MAGAZINE I </span> <div className="circle"> </div>
+          <span> CREATIVE MAGAZINE II </span>
+          <div className="circle"> </div>
+        </div>
       </div>
 
       <div className="projects" id="projects">
@@ -100,10 +101,45 @@ function App() {
           TOP
         </a>
       </div>
-
-      <footer> last updated on FRI MAY 22, 2020, 23:14 </footer>
     </div>
   );
 }
 
 export default App;
+
+// <div className="projects" id="projects">
+//   <a className="links-home-home" href="#home">
+//     HOME
+//   </a>
+//   <Projects></Projects>
+//   <a className="top" href="#home">
+//     TOP
+//   </a>
+//   <a className="top-mobile" href="#home-mobile">
+//     TOP
+//   </a>
+// </div>
+
+//
+// <br />
+// <a className="link-header" href="mailto:audreykadjar@gmail.com">
+//   audreykadjar@gmail.com
+// </a>
+
+// <a
+//   className="link-header"
+//   href="https://www.linkedin.com/in/audreykadjar/"
+//   target="_blank"
+//   rel="noopener noreferrer"
+// >
+//   LINKEDIN
+// </a>
+// <span> &nbsp;|&nbsp; </span>
+// <a
+//   className="link-header"
+//   href="https://github.com/AudreyKj"
+//   target="_blank"
+//   rel="noopener noreferrer"
+// >
+//   GITHUB
+// </a>
