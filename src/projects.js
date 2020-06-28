@@ -304,9 +304,9 @@ function Projects() {
           />
         </div>
       </div>
-      <div className="project-last footer">
+      <div className="footer">
         <a
-          className="link-header"
+          className="link-footer"
           href="https://github.com/AudreyKj"
           target="_blank"
           rel="noopener noreferrer"
@@ -314,14 +314,21 @@ function Projects() {
           GitHub
         </a>
         <a
-          className="link-header"
+          className="link-footer"
           href="https://www.linkedin.com/in/audreykadjar/"
           target="_blank"
           rel="noopener noreferrer"
         >
           LinkedIn
         </a>
-        audreykadjar@gmail.com <br /> last update on June, 28th 2020 at 18:45
+        <a className="link-footer" href="mailto:audreykadjar@gmail.com">
+          audreykadjar@gmail.com
+        </a>
+        <br />
+        <span className="link-footer"> © Audrey Kadjar </span>
+        <span className="link-footer">
+          last update on June, 28th 2020 at 18:45
+        </span>
       </div>
     </div>
   );
