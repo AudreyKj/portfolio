@@ -35,7 +35,7 @@ function Weather() {
     <div>
       {state.weatherReady && (
         <span className="weather">
-          it's {state.temp}°C in Berlin right now...{state.weather}
+          it's {state.temp}°C in Berlin right now... {state.weather}
         </span>
       )}
 
