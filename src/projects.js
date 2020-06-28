@@ -5,15 +5,15 @@ import "./App.css";
 function Projects() {
   return (
     <div className="projects-wrapper">
-      <div className="project-2" id="colorspot">
-        <p className="description">
+      <div className="project-colorspot" id="colorspot">
+        <p className="description-colorspot">
           COLOR SPOT APP <br />
           Users detect colors in images and save color palettes.
           <br /> An "admin" page visualizes data from the app's users.
           <br />
           Tech: React, Node.js, chart.js, PostgreSQL <br />
           <a
-            className="website-link"
+            className="website-link-colorspot"
             href="https://color-spot.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -22,7 +22,7 @@ function Projects() {
           </a>
           &nbsp; | &nbsp;
           <a
-            className="website-link"
+            className="website-link-colorspot"
             href="https://github.com/AudreyKj/color-spot"
             target="_blank"
             rel="noopener noreferrer"

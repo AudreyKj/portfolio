@@ -73,7 +73,7 @@ function App(props) {
         <img className="color-spot" src="color-spot.png" alt="color-spot" />
 
         <div className="projects-index">
-          <span className="project"> projects: </span>
+          <span className="project"> projects index </span>
           <br />
           <a
             href="#colorspot"
@@ -93,6 +93,8 @@ function App(props) {
           <span> CREATIVE MAGAZINE II </span>
           <div className="circle"> </div>
         </div>
+
+        <div className="black-strip"> </div>
       </div>
 
       <div className="projects" id="projects">
