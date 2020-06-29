@@ -8,9 +8,10 @@ function Projects() {
     <div className="projects-wrapper">
       <div className="project-first" id="colorspot">
         <p className="description">
-          COLOR SPOT APP <br />
-          Users detect colors in images and save color palettes.
-          <br /> An "admin" page visualizes data from the app's users.
+          COLOR SEARCH APP <br />
+          Software for searching and categorizing colors. <br />
+          Users detect colors in images and save color palettes. <br />
+          An "admin" page visualizes data from the app's users.
           <br />
           Tech: React, Node.js, chart.js, PostgreSQL <br />
           <a
@@ -36,11 +37,7 @@ function Projects() {
           <ProgressiveImage src="color-spot.png" placeholder="red1.jpg">
             {src => <img className="image-project" src={src} alt="image" />}
           </ProgressiveImage>
-          <img
-            className="image-project"
-            src="color-spot-1.png"
-            alt="colorspot"
-          />
+
           <img
             className="image-project"
             src="color-spot-2.png"
@@ -78,7 +75,6 @@ function Projects() {
         <div className="image-project-container">
           <img className="image-project" src="covid-1.png" alt="covid" />
           <img className="image-project" src="covid-3.png" alt="covid" />
-          <img className="image-project" src="covid-2.png" alt="covid" />
         </div>
       </div>
 
@@ -112,15 +108,13 @@ function Projects() {
         <div className="image-project-container">
           <img className="image-project" src="covid-1.png" alt="covid" />
           <img className="image-project" src="covid-3.png" alt="covid" />
-          <img className="image-project" src="covid-2.png" alt="covid" />
         </div>
       </div>
 
       <div className="project-2" id="facedetection">
         <p className="description">
           FACE-DETECTION APP <br />
-          Face-detection API detects human faces. Users can upload selfies and
-          leave comments.
+          Users use the face-detection API, upload selfies, and leave comments.
           <br />
           Tech: Vue.js, Node.js, AWS/Cloudinary, PostgreSQL, face-api.js
           <br />
@@ -172,8 +166,7 @@ function Projects() {
           <br />
           Users register, create a profile, and sign for a cause.
           <br />
-          The homepage's customizable design enables users to choose the
-          background-color.
+          The homepage's background-color can be customized.
           <br />
           <a
             className="website-link"
@@ -239,11 +232,6 @@ function Projects() {
         <div className="image-project-container">
           <img className="image-project" src="threeten-1.png" alt="threeten" />
           <img className="image-project" src="threeten-2.png" alt="threeten" />
-          <img className="image-project" src="threeten-3.png" alt="threeten" />
-          <img className="image-project" src="threeten-4.png" alt="threeten" />
-          <img className="image-project" src="threeten-5.png" alt="threeten" />
-          <img className="image-project" src="threeten-6.png" alt="threeten" />
-          <img className="image-project" src="threeten-7.png" alt="threeten" />
         </div>
       </div>
 
@@ -278,32 +266,12 @@ function Projects() {
         <div className="image-project-container">
           <img
             className="image-project"
-            src="fiveforty-4.png"
-            alt="fiveforty"
-          />
-          <img
-            className="image-project"
             src="fiveforty-2.png"
             alt="fiveforty"
           />
           <img
             className="image-project"
             src="fiveforty-3.png"
-            alt="fiveforty"
-          />
-          <img
-            className="image-project"
-            src="fiveforty-5.png"
-            alt="fiveforty"
-          />
-          <img
-            className="image-project"
-            src="fiveforty-6.png"
-            alt="fiveforty"
-          />
-          <img
-            className="image-project"
-            src="fiveforty-1.png"
             alt="fiveforty"
           />
         </div>
