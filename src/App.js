@@ -76,22 +76,22 @@ function App(props) {
           <span className="project"> projects index: </span>
           <br />
           <a
+            className="project-index-links"
             href="#colorspot"
             onMouseEnter={displayColorSpot}
             onMouseLeave={hideColorSpot}
           >
             COLOR SPOT APP
           </a>
-          <div className="circle"> </div>
-          <span> COVID 19 APP </span> <div className="circle"> </div>
-          <span> EXCHANGE APP </span> <div className="circle"> </div>
+
+          <a className="project-index-links"> COVID 19 APP </a>
+          <a className="project-index-links"> EXCHANGE APP </a>
           <br />
-          <span> FACE-DETECTION APP </span> <div className="circle"> </div>
-          <span> SIGN FOR A CAUSE APP </span> <div className="circle"> </div>
+          <a className="project-index-links"> FACE-DETECTION APP </a>
+          <a className="project-index-links"> SIGN FOR A CAUSE APP </a>
           <br />
-          <span> CREATIVE MAGAZINE I </span> <div className="circle"> </div>
-          <span> CREATIVE MAGAZINE II </span>
-          <div className="circle"> </div>
+          <a className="project-index-links"> CREATIVE MAGAZINE I </a>
+          <a className="project-index-links"> CREATIVE MAGAZINE II </a>
         </div>
 
         <div className="black-strip"> </div>

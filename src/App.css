@@ -1,5 +1,7 @@
 @import-normalize;
 
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9,7 +11,8 @@
 }
 
 body {
-  font-family: Arial, Helvetica, "sans-serif";
+  font-family: "Questrial", sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   background-color: #f7f7f7;
   font-weight: 300;
   overflow-x: hidden;
@@ -26,21 +29,6 @@ div.home {
 
   display: flex;
   align-items: center;
-}
-
-div.projects-index {
-  width: 100%;
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 2.5rem;
-
-  position: absolute;
-  bottom: 90px;
-  line-height: 1.5;
-}
-
-.project {
-  font-size: 2rem;
 }
 
 /* div.circle {
@@ -102,6 +90,7 @@ span.weather {
   padding: 5px;
   line-height: 1.6;
   font-style: italic;
+  letter-spacing: 0.1em;
   animation: fadeIn 2.5s;
 }
 
@@ -197,6 +186,36 @@ a.links-about:hover,
 a.links-about:visited {
   color: #fff;
   text-decoration: underline;
+}
+
+/* PROJECT - INDEX */
+div.projects-index {
+  width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 3.5rem;
+  bottom: 90px;
+  line-height: 1.5;
+  z-index: 2;
+  position: absolute;
+}
+
+.project {
+  font-size: 2rem;
+}
+
+a.project-index-links,
+a.project-index-links:active,
+a.project-index-links:visited {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.project-index-links:hover {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* PROJECTS */
