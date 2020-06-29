@@ -1,6 +1,7 @@
 import React from "react";
 import ProgressiveImage from "react-progressive-graceful-image";
 import "./App.css";
+import Weather from "./weather.js";
 
 function Projects() {
   return (

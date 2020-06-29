@@ -53,8 +53,8 @@ function App(props) {
         <div className="circle-logo"> </div>
 
         <header>
-          <span className="name"> Audrey Kadjar </span>
-          <Weather></Weather>
+          <span className="name">Audrey Kadjar</span>
+
           <nav>
             <a className="links-home" href="#projects">
               projects
@@ -69,9 +69,7 @@ function App(props) {
         <div className="about-container">
           <About toggleAbout={toggleAbout}></About>
         </div>
-
         <img className="color-spot" src="color-spot.png" alt="color-spot" />
-
         <div className="projects-index">
           <span className="project"> projects index: </span>
           <a
@@ -84,20 +82,19 @@ function App(props) {
           </a>
           <div className="circle"></div>
           <a className="project-index-links"> covid-19 app </a>
-          <div className="circle"></div>
-          <a className="project-index-links"> exchange app </a>
 
           <br />
-          <a className="project-index-links"> face-detection app</a>
+          <a className="project-index-links"> exchange app </a>
           <div className="circle"></div>
+          <a className="project-index-links"> face-detection app</a>
+          <br />
           <a className="project-index-links"> sign for a cause app </a>
-
+          <div className="circle"></div>
+          <a className="project-index-links"> 3-d web animation </a>
           <br />
           <a className="project-index-links"> creative magazine I </a>
           <div className="circle"></div>
           <a className="project-index-links"> creative magazine II </a>
-          <div className="circle"></div>
-          <a className="project-index-links"> 3-d web animation </a>
         </div>
 
         <div className="black-strip"> </div>

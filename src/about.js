@@ -12,7 +12,7 @@ function About(props) {
         <p className="about-text">
           I am a Web Developer based in Berlin, Germany. <br />
           <br />I develop full-stack products with a focus on JavaScript,
-          Node.js, and React.
+          Node.js, SQL, and React.
           <br />
           <br /> I thrive on crafting digital experiences that combine
           development and design.

@@ -35,7 +35,8 @@ function Weather() {
     <div>
       {state.weatherReady && (
         <span className="weather">
-          it's {state.temp}°C in Berlin right now... {state.weather}
+          <img className="eye-icon" src="eye-icon.svg" alt="eye-icon" /> it's{" "}
+          {state.temp}°C in Berlin right now... {state.weather}
         </span>
       )}
 
