@@ -1,6 +1,6 @@
 # portfolio made with React
 
-CURRENTLY IN CONSTRUCTION!!!!
+CURRENTLY IN MAINTENANCE!!! - will be available again in a few hours!
 
 Made with create-react-app.
 

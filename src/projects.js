@@ -1,5 +1,5 @@
 import React from "react";
-
+import ProgressiveImage from "react-progressive-graceful-image";
 import "./App.css";
 
 function Projects() {
@@ -32,7 +32,9 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img className="image-project" src="color-spot.png" alt="colorspot" />
+          <ProgressiveImage src="color-spot.png" placeholder="red1.jpg">
+            {src => <img className="image-project" src={src} alt="image" />}
+          </ProgressiveImage>
           <img
             className="image-project"
             src="color-spot-1.png"

@@ -73,7 +73,7 @@ function App(props) {
         <img className="color-spot" src="color-spot.png" alt="color-spot" />
 
         <div className="projects-index">
-          <span className="project"> project index: </span>
+          <span className="project"> projects index: </span>
           <a
             className="project-index-links"
             href="#colorspot"
