@@ -18,7 +18,7 @@ function About(props) {
           development and design.
           <br /> <br />
           <a
-            className="link-header"
+            className="links-about"
             href="https://github.com/AudreyKj"
             target="_blank"
             rel="noopener noreferrer"
@@ -27,7 +27,7 @@ function About(props) {
           </a>
           <br />
           <a
-            className="link-header"
+            className="links-about"
             href="https://www.linkedin.com/in/audreykadjar/"
             target="_blank"
             rel="noopener noreferrer"
@@ -35,7 +35,7 @@ function About(props) {
             LinkedIn
             <br />
           </a>
-          <a className="link-header" href="mailto:audreykadjar@gmail.com">
+          <a className="links-about" href="mailto:audreykadjar@gmail.com">
             audreykadjar@gmail.com
           </a>
         </p>

@@ -444,3 +444,24 @@ footer {
     display: none;
   }
 }
+
+/* COLORS */
+
+
+/* #colorspot {
+  background-color: #231f20;
+}
+
+#covid19 {
+  background-color: #83a3a2;
+}
+
+#exchange {
+  background-color: #ae9f9e;
+}
+
+#facedetection {
+  background-color: #cfd9df;
+} */
+
+/* #7a898e background-color: #e9e5dd; */

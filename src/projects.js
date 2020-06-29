@@ -5,15 +5,15 @@ import "./App.css";
 function Projects() {
   return (
     <div className="projects-wrapper">
-      <div className="project-colorspot" id="colorspot">
-        <p className="description-colorspot">
+      <div className="project-first" id="colorspot">
+        <p className="description">
           COLOR SPOT APP <br />
           Users detect colors in images and save color palettes.
           <br /> An "admin" page visualizes data from the app's users.
           <br />
           Tech: React, Node.js, chart.js, PostgreSQL <br />
           <a
-            className="website-link-colorspot"
+            className="website-link"
             href="https://color-spot.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -22,7 +22,7 @@ function Projects() {
           </a>
           &nbsp; | &nbsp;
           <a
-            className="website-link-colorspot"
+            className="website-link"
             href="https://github.com/AudreyKj/color-spot"
             target="_blank"
             rel="noopener noreferrer"
@@ -84,7 +84,8 @@ function Projects() {
           EXCHANGE APP <br />
           Users exchange languages, services, and skills with their friends.
           <br />
-          Tech: React, Node.js, socket.io, AWS, PostgreSQL, Three.js, Jest
+          Tech: React, Redux, Node.js, socket.io, AWS/Cloudinary, PostgreSQL,
+          Three.js, Jest
           <br />
           <a
             className="website-link"
@@ -158,7 +159,7 @@ function Projects() {
           SIGN FOR CAUSE APP <br />
           App inspired by&nbsp;
           <a
-            className="links-text"
+            className="website-link"
             href="https://www.change.org"
             target="_blank"
             rel="noopener noreferrer"
@@ -304,7 +305,7 @@ function Projects() {
           />
         </div>
       </div>
-      <div className="footer">
+      <footer>
         <a
           className="link-footer"
           href="https://github.com/AudreyKj"
@@ -329,7 +330,7 @@ function Projects() {
         <span className="link-footer">
           last update on June, 28th 2020 at 18:45
         </span>
-      </div>
+      </footer>
     </div>
   );
 }
