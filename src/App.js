@@ -96,6 +96,8 @@ function App(props) {
           <a className="project-index-links"> creative magazine I </a>
           <div className="circle"></div>
           <a className="project-index-links"> creative magazine II </a>
+          <div className="circle"></div>
+          <a className="project-index-links"> 3-d web animation </a>
         </div>
 
         <div className="black-strip"> </div>
