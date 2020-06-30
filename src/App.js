@@ -44,8 +44,6 @@ function App(props) {
       </Helmet>
 
       <div className="home" id="home">
-        <div className="circle-logo"> </div>
-
         <header>
           <span className="name">Audrey Kadjar</span>
 
@@ -111,6 +109,24 @@ function App(props) {
 }
 
 export default App;
+
+// <span
+//   className="name"
+//   onMouseEnter={displayPortrait}
+//   onMouseLeave={hidePortrait}
+// >
+//   Audrey Kadjar
+// </span>
+//
+// const displayPortrait = () => {
+//   const colorspotImg = document.querySelector("img.portrait");
+//   colorspotImg.style.display = "block";
+// };
+//
+// const hidePortrait = () => {
+//   const colorspotImg = document.querySelector("img.portrait");
+//   colorspotImg.style.display = "none";
+// };
 
 //  <a className="links-home" href="#projects">
 //projects
