@@ -195,7 +195,7 @@ span.weather-mobile {
 
 div.about-container {
   width: 350px;
-  min-height: 96vh;
+  min-height: 100%;
   background-color: #4a5d5a;
   position: absolute;
   right: 30px;
@@ -249,10 +249,8 @@ a.links-about:visited {
 /* PROJECT - INDEX */
 div.projects-index {
   width: 100%;
-  margin-left: 50px;
-  margin-right: 50px;
-
-  bottom: 90px;
+  padding-left: 30px;
+  bottom: 50px;
   line-height: 1.2;
 
   position: absolute;
@@ -282,9 +280,9 @@ a.project-index-links:visited {
   color: #333;
   text-decoration: none;
   cursor: pointer;
-  font-family: apfelGrotezk;
+  /* font-family: apfelGrotezk; */
   /* apfelGrotezk;  */
-  font-size: 4vw;
+  font-size: 2.9rem;
   -webkit-font-smoothing: subpixel-antialiased;
   /* -webkit-font-smoothing: antialiased; */
   font-weight: 300;
@@ -309,7 +307,7 @@ img.color-spot {
   height: auto;
   position: absolute;
   /* top: 0; */
-  top: 13%;
+  top: 15%;
 
   /* top: 16%; */
 
@@ -322,7 +320,7 @@ img.color-spot {
 div.black-strip {
   width: 100%;
   background-color: #333;
-  height: 4vh;
+  height: 30px;
   position: absolute;
   bottom: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -352,12 +350,12 @@ div.projects-wrapper {
 }
 
 div.project-first {
-  display: flex;
   width: 100%;
   min-height: 100vh;
+
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
   border: none;
 
   color: #333;
@@ -368,12 +366,12 @@ div.project-first {
 }
 
 div.project-2 {
-  display: flex;
   width: 100%;
   min-height: 100vh;
+
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
 
   border-top: 10px solid #d6dada;
   border-left: 30px solid #d6dada;
@@ -384,7 +382,7 @@ div.project-2 {
 
 div.image-project-container {
   width: 90%;
-  margin-top: 70px;
+  margin-top: 40px;
   margin-bottom: 40px;
 
   display: flex;
