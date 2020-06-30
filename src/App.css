@@ -85,10 +85,25 @@ span.name {
   left: 30px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   span.name {
     font-size: 1.5rem;
     left: 15px;
+  }
+}
+
+@media (min-width: 2000px) {
+  span.name {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 700px) and (max-height: 380px) {
+  a.project-index-links,
+  a.project-index-links:active,
+  a.project-index-links:visited,
+  span.project {
+    font-size: 1rem;
   }
 }
 
@@ -98,6 +113,8 @@ a.links-home:visited {
   color: #333;
   text-decoration: none;
   margin-right: 15px;
+  right: 50px;
+  position: absolute;
 }
 
 a.links-home:hover {
@@ -105,7 +122,7 @@ a.links-home:hover {
   text-decoration: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   a.links-home,
   a.links-home:active,
   a.links-home:visited {
@@ -114,15 +131,19 @@ a.links-home:hover {
   }
 }
 
-nav {
-  position: absolute;
-  right: 50px;
+@media (min-width: 2000px) {
+  a.links-home,
+  a.links-home:active,
+  a.links-home:visited {
+    font-size: 3.5rem;
+  }
 }
 
 div.about-link {
   height: 100%;
   background-color: #4a5d5a;
   padding-top: 5%;
+  right: 50px;
   position: absolute;
   right: 0;
   top: 0;
@@ -150,6 +171,12 @@ span.weather {
   text-align: center;
 }
 
+@media (min-width: 2000px) {
+  span.weather {
+    font-size: 3.5rem;
+  }
+}
+
 /* ABOUT */
 div.about-container {
   width: 350px;
@@ -171,6 +198,14 @@ div.about-container {
     width: 100%;
     transform: translate(100%, 0);
     transition: transform 0.9s;
+  }
+}
+
+@media (min-width: 2000px) {
+  div.about-container {
+    width: 500px;
+    transform: translate(500px, 0);
+    transition: transform 0.7s;
   }
 }
 
@@ -198,8 +233,21 @@ div.close:hover {
 p.about-text {
   font-size: 1.5rem;
   text-align: center;
-
+  margin: 0;
   line-height: 1.2;
+  padding-top: 5px;
+}
+
+@media (max-width: 350px) {
+  p.about-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  p.about-text {
+    font-size: 2rem;
+  }
 }
 
 a.links-about {
@@ -254,7 +302,7 @@ a.project-index-links:visited {
   cursor: pointer;
   /* font-family: apfelGrotezk; */
   /* apfelGrotezk;  */
-  font-size: 2.9rem;
+  font-size: 2.7rem;
   -webkit-font-smoothing: antialiased;
   font-weight: 300;
   font-style: normal;
@@ -279,9 +327,11 @@ a.project-index-links:visited {
 @media (max-width: 700px) {
   a.project-index-links,
   a.project-index-links:active,
-  a.project-index-links:visited {
-    font-size: 3rem;
+  a.project-index-links:visited,
+  span.project {
+    font-size: 1.5rem;
   }
+
   div.projects-index {
     display: flex;
     justify-content: center;
@@ -295,47 +345,39 @@ a.project-index-links:visited {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   a.project-index-links,
   a.project-index-links:active,
-  a.project-index-links:visited {
+  a.project-index-links:visited,
+  span.project {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 700px) and (max-height: 600px) {
+@media (max-width: 700px) {
   a.project-index-links,
   a.project-index-links:active,
-  a.project-index-links:visited {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 700px) and (max-height: 450px) {
-  a.project-index-links,
-  a.project-index-links:active,
-  a.project-index-links:visited {
+  a.project-index-links:visited,
+  span.project {
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 700px) and (max-height: 350px) {
+@media (max-width: 700px) and (max-height: 380px) {
   a.project-index-links,
   a.project-index-links:active,
-  a.project-index-links:visited {
+  a.project-index-links:visited,
+  span.project {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 350px) {
+@media (min-width: 2000px) {
   a.project-index-links,
   a.project-index-links:active,
-  a.project-index-links:visited {
-    font-size: 1.5rem;
-  }
-
+  a.project-index-links:visited,
   span.project {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -348,7 +390,6 @@ a.project-index-links:hover {
 }
 
 /* HOVER IMAGE EFFECT */
-
 div.hovereffect-container {
   width: 100%;
   height: 100%;
@@ -498,7 +539,7 @@ img.image-project {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   img.image-project {
     width: 450px;
   }
@@ -549,9 +590,22 @@ p.description {
   padding: 20px;
 }
 
+@media (max-width: 800px) {
+  p.description {
+    width: 80%;
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 450px) {
   p.description {
     width: 100%;
+  }
+}
+
+@media (min-width: 2000px) {
+  p.description {
+    font-size: 2rem;
   }
 }
 
@@ -628,6 +682,12 @@ a.top {
   right: 1rem; */
   margin-top: 20px;
   cursor: pointer;
+}
+
+@media (min-width: 2000px) {
+  footer {
+    font-size: 3.5rem;
+  }
 }
 
 /* div.project-first {

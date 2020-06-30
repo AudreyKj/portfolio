@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Projects from "./projects.js";
-import Playground from "./playground.js";
-import PlaygroundMobile from "./playground-mobile.js";
-import Weather from "./weather.js";
 import About from "./about.js";
 import "./App.css";
 import { Helmet } from "react-helmet";
 
 function App(props) {
-  const [isLoaded, setisLoaded] = useState(true);
-  const [aboutVisible, setAboutVisible] = useState(false);
-
   console.log("props app", props);
 
   const displayColorSpot = () => {
@@ -30,7 +24,7 @@ function App(props) {
   };
 
   return (
-    <div className="App">
+    <>
       <Helmet>
         <title>Audrey Kadjar portfolio</title>
         <meta name="description" content="Audrey Kadjar portfolio" />
@@ -55,11 +49,9 @@ function App(props) {
         <header>
           <span className="name">Audrey Kadjar</span>
 
-          <nav>
-            <a className="links-home" href="#about" onClick={toggleAbout}>
-              about
-            </a>
-          </nav>
+          <a className="links-home" href="#about" onClick={toggleAbout}>
+            about
+          </a>
         </header>
 
         <div className="about-container">
@@ -79,19 +71,33 @@ function App(props) {
             color search app
           </a>
           <div className="circle"></div>
-          <a className="project-index-links break"> covid19 app </a>
+          <a href="#covid19" className="project-index-links break">
+            covid19 app
+          </a>
 
-          <a className="project-index-links"> exchange app </a>
+          <a href="#exchange" className="project-index-links">
+            exchange app
+          </a>
           <div className="circle"></div>
-          <a className="project-index-links break"> face-detection app</a>
+          <a href="#facedetection" className="project-index-links break">
+            face-detection app
+          </a>
 
-          <a className="project-index-links"> sign for a cause app </a>
+          <a href="#signcause" className="project-index-links">
+            sign for a cause app
+          </a>
           <div className="circle"></div>
-          <a className="project-index-links break"> 3-d web animation </a>
+          <a href="#3danim" className="project-index-links break">
+            3-d web animation
+          </a>
 
-          <a className="project-index-links"> creative magazine I </a>
+          <a href="#mag1" className="project-index-links">
+            creative magazine I
+          </a>
           <div className="circle"></div>
-          <a className="project-index-links"> creative magazine II </a>
+          <a href="#mag2" className="project-index-links">
+            creative magazine II
+          </a>
         </div>
 
         <div className="black-strip"> </div>
@@ -100,7 +106,7 @@ function App(props) {
       <div className="projects" id="projects">
         <Projects></Projects>
       </div>
-    </div>
+    </>
   );
 }
 

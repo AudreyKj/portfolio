@@ -214,7 +214,57 @@ function Projects() {
         </div>
       </div>
 
-      <div className="project-2">
+      <div className="project-2" id="3danim">
+        <p className="description">
+          3-D WEB ANIMATION <br />
+          App inspired by&nbsp;
+          <a
+            className="website-link"
+            href="https://www.change.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            change.org.
+          </a>
+          <br />
+          Users register, create a profile, and sign for a cause.
+          <br />
+          The homepage's background-color can be customized.
+          <br />
+          <a
+            className="website-link"
+            href="https://sign-for-cause.herokuapp.com/petition"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/sign-for-cause"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </p>
+
+        <div className="image-project-container">
+          <img
+            className="image-project  margin-right"
+            src="facedetection-1.png"
+            alt="face-detection"
+          />
+          <img
+            className="image-project"
+            src="facedetection-2.png"
+            alt="face-detection"
+          />
+        </div>
+      </div>
+
+      <div className="project-2" id="mag1">
         <p className="description">
           WEBSITE FOR CREATIVE MAGAZINE (ISSUE II) <br />
           synthetic velvet is an online, creative magazine which explores the
@@ -252,7 +302,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="project-last">
+      <div className="project-last" id="mag2">
         <p className="description">
           WEBSITE FOR CREATIVE MAGAZINE (ISSUE I)
           <br />
