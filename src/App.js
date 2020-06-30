@@ -65,7 +65,9 @@ function App(props) {
         <div className="about-container">
           <About toggleAbout={toggleAbout}></About>
         </div>
-        <img className="color-spot" src="color-spot.png" alt="color-spot" />
+        <div className="hovereffect-container">
+          <img className="color-spot" src="color-spot.png" alt="color-spot" />
+        </div>
         <div className="projects-index">
           <span className="project"> projects: </span>
           <a
@@ -77,17 +79,16 @@ function App(props) {
             color search app
           </a>
           <div className="circle"></div>
-          <a className="project-index-links"> covid-19 app </a>
+          <a className="project-index-links break"> covid19 app </a>
 
-          <br />
           <a className="project-index-links"> exchange app </a>
           <div className="circle"></div>
-          <a className="project-index-links"> face-detection app</a>
-          <br />
+          <a className="project-index-links break"> face-detection app</a>
+
           <a className="project-index-links"> sign for a cause app </a>
           <div className="circle"></div>
-          <a className="project-index-links"> 3-d web animation </a>
-          <br />
+          <a className="project-index-links break"> 3-d web animation </a>
+
           <a className="project-index-links"> creative magazine I </a>
           <div className="circle"></div>
           <a className="project-index-links"> creative magazine II </a>
@@ -98,12 +99,6 @@ function App(props) {
 
       <div className="projects" id="projects">
         <Projects></Projects>
-        <a className="top" href="#home">
-          TOP
-        </a>
-        <a className="top-mobile" href="#home-mobile">
-          TOP
-        </a>
       </div>
     </div>
   );

@@ -10,7 +10,6 @@ function Projects() {
         <p className="description">
           COLOR SEARCH APP <br />
           Software for searching and categorizing colors. <br />
-          Users detect colors in images and save color palettes. <br />
           An "admin" page visualizes data from the app's users.
           <br />
           Tech: React, Node.js, chart.js, PostgreSQL <br />
@@ -35,7 +34,13 @@ function Projects() {
 
         <div className="image-project-container">
           <ProgressiveImage src="color-spot.png" placeholder="red1.jpg">
-            {src => <img className="image-project" src={src} alt="image" />}
+            {src => (
+              <img
+                className="image-project margin-right"
+                src={src}
+                alt="image"
+              />
+            )}
           </ProgressiveImage>
 
           <img
@@ -73,7 +78,11 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img className="image-project" src="covid-1.png" alt="covid" />
+          <img
+            className="image-project margin-right"
+            src="covid-1.png"
+            alt="covid"
+          />
           <img className="image-project" src="covid-3.png" alt="covid" />
         </div>
       </div>
@@ -106,7 +115,11 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img className="image-project" src="covid-1.png" alt="covid" />
+          <img
+            className="image-project margin-right"
+            src="covid-1.png"
+            alt="covid"
+          />
           <img className="image-project" src="covid-3.png" alt="covid" />
         </div>
       </div>
@@ -139,7 +152,7 @@ function Projects() {
 
         <div className="image-project-container">
           <img
-            className="image-project"
+            className="image-project  margin-right"
             src="facedetection-1.png"
             alt="face-detection"
           />
@@ -189,7 +202,7 @@ function Projects() {
 
         <div className="image-project-container">
           <img
-            className="image-project"
+            className="image-project  margin-right"
             src="facedetection-1.png"
             alt="face-detection"
           />
@@ -230,7 +243,11 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img className="image-project" src="threeten-1.png" alt="threeten" />
+          <img
+            className="image-project"
+            src="threeten-1.png  margin-right"
+            alt="threeten"
+          />
           <img className="image-project" src="threeten-2.png" alt="threeten" />
         </div>
       </div>
@@ -265,7 +282,7 @@ function Projects() {
         </p>
         <div className="image-project-container">
           <img
-            className="image-project"
+            className="image-project  margin-right"
             src="fiveforty-2.png"
             alt="fiveforty"
           />
@@ -297,13 +314,18 @@ function Projects() {
           audreykadjar@gmail.com
         </a>
         <br />
-        <span className="link-footer"> © Audrey Kadjar </span>
+        <span className="link-footer"> © Audrey Kadjar, 2020 </span>
         <span className="link-footer">
-          last update on June, 28th 2020 at 18:45
+          <Weather> </Weather>
         </span>
+        <a className="top" href="#home">
+          BACK TO TOP
+        </a>
       </footer>
     </div>
   );
 }
 
 export default Projects;
+
+// last update on June, 28th 2020 at 18:45

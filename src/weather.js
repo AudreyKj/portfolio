@@ -3,13 +3,12 @@ import axios from "axios";
 import "./App.css";
 
 function Weather() {
-  //disabling eslint to pass an empty array to useEffect
+  //disabled eslint to pass empty array to useEffect
   /* eslint-disable */
   const [state, setState] = useState({
     temp: "",
     weather: "",
-    weatherReady: false,
-    weatherReadyMobile: false
+    weatherReady: false
   });
 
   useEffect(() => {
@@ -22,8 +21,7 @@ function Weather() {
           ...state,
           temp: response.data.main.temp,
           weather: response.data.weather[0].description,
-          weatherReady: true,
-          weatherReadyMobile: true
+          weatherReady: true
         });
       })
       .catch(error => {
@@ -32,21 +30,16 @@ function Weather() {
   }, []);
 
   return (
-    <div>
+    <>
       {state.weatherReady && (
         <span className="weather">
-          <img className="eye-icon" src="eye-icon.svg" alt="eye-icon" /> it's{" "}
-          {state.temp}°C in Berlin right now... {state.weather}
+          it's {state.temp}°C in Berlin right now... {state.weather}
         </span>
       )}
-
-      {state.weatherReadyMobile && (
-        <span className="weather-mobile">
-          it's {state.temp}°C in Berlin right now...{state.weather}
-        </span>
-      )}
-    </div>
+    </>
   );
 }
 
 export default Weather;
+
+// <img className="eye-icon" src="eye-icon.svg" alt="eye-icon" />
