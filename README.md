@@ -1,13 +1,12 @@
 # portfolio made with React
 
-CURRENTLY IN MAINTENANCE!!! - will be available again in a few hours!
-
-Made with create-react-app.
+Portfolio with modular design made with create-react-app + using Weather API.
 
 ## Tech
 
-**Stack**: HTML, CSS, JavaScript<br />
-**Framework**: React <br />
+**Stack**: CSS, JavaScript, React <br />
 **Deployment**: Heroku
 
 ## Visual
+
+![screenshot](readMe/screenshot.png)
