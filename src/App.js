@@ -5,18 +5,6 @@ import "./App.css";
 import { Helmet } from "react-helmet";
 
 function App(props) {
-  console.log("props app", props);
-
-  const displayColorSpot = () => {
-    const colorspotImg = document.querySelector("img.color-spot");
-    colorspotImg.style.display = "block";
-  };
-
-  const hideColorSpot = () => {
-    const colorspotImg = document.querySelector("img.color-spot");
-    colorspotImg.style.display = "none";
-  };
-
   const toggleAbout = () => {
     const about = document.querySelector("div.about-container");
     console.log("about", about);
@@ -55,17 +43,10 @@ function App(props) {
         <div className="about-container">
           <About toggleAbout={toggleAbout}></About>
         </div>
-        <div className="hovereffect-container">
-          <img className="color-spot" src="colorspot-1.png" alt="color-spot" />
-        </div>
+
         <div className="projects-index">
           <span className="project"> projects: </span>
-          <a
-            className="project-index-links"
-            href="#colorspot"
-            onMouseEnter={displayColorSpot}
-            onMouseLeave={hideColorSpot}
-          >
+          <a className="project-index-links" href="#colorspot">
             color search app
           </a>
           <div className="circle"></div>
