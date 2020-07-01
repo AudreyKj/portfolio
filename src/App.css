@@ -327,12 +327,21 @@ a.project-index-links:visited {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 400px) {
   a.project-index-links,
   a.project-index-links:active,
   a.project-index-links:visited,
   span.project {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  a.project-index-links,
+  a.project-index-links:active,
+  a.project-index-links:visited,
+  span.project {
+    font-size: 1.7rem;
   }
 
   div.projects-index {
@@ -355,6 +364,10 @@ a.project-index-links:visited {
   span.project {
     font-size: 1rem;
   }
+  div.circle {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 @media (min-width: 2000px) {
@@ -362,7 +375,7 @@ a.project-index-links:visited {
   a.project-index-links:active,
   a.project-index-links:visited,
   span.project {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -378,7 +391,7 @@ a.project-index-links:hover {
 div.hovereffect-container {
   width: 100%;
   height: 100%;
-  padding-top: 40px;
+  padding-top: 6%;
   padding-bottom: 20px;
 
   display: flex;
@@ -405,9 +418,9 @@ img.color-spot {
   width: 400px;
   height: auto;
 
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 450px) {
@@ -515,11 +528,17 @@ img.image-project {
   width: 550px;
   height: auto;
 
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+}
+
+@media (min-width: 2000px) {
+  img.image-project {
+    width: 700px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -594,7 +613,6 @@ div.project-last {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   border-top: 10px solid #d6dada;
   border-left: 30px solid #d6dada;

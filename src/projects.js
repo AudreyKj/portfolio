@@ -1,5 +1,4 @@
 import React from "react";
-import ProgressiveImage from "react-progressive-graceful-image";
 import "./App.css";
 import Weather from "./weather.js";
 
@@ -12,7 +11,7 @@ function Projects() {
           Software for searching and categorizing colors. <br />
           An "admin" page visualizes data from the app's users.
           <br />
-          Tech: React, Node.js, chart.js, PostgreSQL <br />
+          Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL <br />
           <a
             className="website-link"
             href="https://color-spot.herokuapp.com/"
@@ -33,57 +32,16 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <ProgressiveImage src="color-spot.png" placeholder="red1.jpg">
-            {src => (
-              <img
-                className="image-project margin-right"
-                src={src}
-                alt="image"
-              />
-            )}
-          </ProgressiveImage>
-
           <img
-            className="image-project"
-            src="color-spot-2.png"
+            src="colorspot-1.png"
+            className="image-project margin-right"
             alt="colorspot"
           />
-        </div>
-      </div>
-
-      <div className="project-2" id="covid19">
-        <p className="description">
-          COVID-19 APP <br />
-          Users share their personal experiences of the COVID-19 outbreak and
-          browse through others' submissions. A dashboard visualizes data from
-          the submissions. <br />
-          Tech: React, Node.js, PostgreSQL, Jest, chart.js <br />
-          <a
-            className="website-link"
-            href="https://corona-emotions.club/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            live site
-          </a>
-          &nbsp; | &nbsp;
-          <a
-            className="website-link"
-            href="https://github.com/AudreyKj/corona-emotions"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
-
-        <div className="image-project-container">
           <img
-            className="image-project margin-right"
-            src="covid-1.png"
-            alt="covid"
+            src="colorspot-2.png"
+            className="image-project"
+            alt="colorspot"
           />
-          <img className="image-project" src="covid-3.png" alt="covid" />
         </div>
       </div>
 
@@ -117,17 +75,107 @@ function Projects() {
         <div className="image-project-container">
           <img
             className="image-project margin-right"
+            src="exchange1.png"
+            alt="exchange-app"
+          />
+          <img
+            className="image-project"
+            src="exchange2.png"
+            alt="exchange-app"
+          />
+        </div>
+      </div>
+
+      <div className="project-2" id="signcause">
+        <p className="description">
+          SIGN FOR CAUSE APP <br />
+          App inspired by&nbsp;
+          <a
+            className="website-link"
+            href="https://www.change.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            change.org.
+          </a>
+          <br />
+          Users register, create a profile, and sign for a cause.
+          <br />
+          Tech: Node.js, Handlebars.js, PostgreSQL, SuperTest
+          <br />
+          <a
+            className="website-link"
+            href="https://sign-for-cause.herokuapp.com/petition"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/sign-for-cause"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </p>
+
+        <div className="image-project-container">
+          <img
+            className="image-project  margin-right"
+            src="signcause1.png"
+            alt="signforcause"
+          />
+          <img
+            className="image-project"
+            src="signcause2.png"
+            alt="signforcause"
+          />
+        </div>
+      </div>
+
+      <div className="project-2" id="covid19">
+        <p className="description">
+          COVID-19 APP <br />
+          Users share their personal experiences of the COVID-19 outbreak.
+          <br />A dashboard visualizes data from the submissions.
+          <br /> Tech: SASS/SCSS, React, Node.js, PostgreSQL, Jest, chart.js
+          <br />
+          <a
+            className="website-link"
+            href="https://corona-emotions.club/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/corona-emotions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </p>
+
+        <div className="image-project-container">
+          <img
+            className="image-project margin-right"
             src="covid-1.png"
             alt="covid"
           />
-          <img className="image-project" src="covid-3.png" alt="covid" />
+          <img className="image-project" src="covid-2.png" alt="covid" />
         </div>
       </div>
 
       <div className="project-2" id="facedetection">
         <p className="description">
           FACE-DETECTION APP <br />
-          Users use the face-detection API, upload selfies, and leave comments.
+          Users can use the API, upload selfies, and leave comments.
           <br />
           Tech: Vue.js, Node.js, AWS/Cloudinary, PostgreSQL, face-api.js
           <br />
@@ -152,88 +200,24 @@ function Projects() {
 
         <div className="image-project-container">
           <img
-            className="image-project  margin-right"
-            src="facedetection-1.png"
+            className="image-project margin-right"
+            src="face.png"
             alt="face-detection"
           />
-          <img
-            className="image-project"
-            src="facedetection-2.png"
-            alt="face-detection"
-          />
-        </div>
-      </div>
-
-      <div className="project-2" id="signcause">
-        <p className="description">
-          SIGN FOR CAUSE APP <br />
-          App inspired by&nbsp;
-          <a
-            className="website-link"
-            href="https://www.change.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            change.org.
-          </a>
-          <br />
-          Users register, create a profile, and sign for a cause.
-          <br />
-          The homepage's background-color can be customized.
-          <br />
-          <a
-            className="website-link"
-            href="https://sign-for-cause.herokuapp.com/petition"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            live site
-          </a>
-          &nbsp; | &nbsp;
-          <a
-            className="website-link"
-            href="https://github.com/AudreyKj/sign-for-cause"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
-
-        <div className="image-project-container">
-          <img
-            className="image-project  margin-right"
-            src="facedetection-1.png"
-            alt="face-detection"
-          />
-          <img
-            className="image-project"
-            src="facedetection-2.png"
-            alt="face-detection"
-          />
+          <img className="image-project" src="face2.png" alt="face-detection" />
         </div>
       </div>
 
       <div className="project-2" id="3danim">
         <p className="description">
           3-D WEB ANIMATION <br />
-          App inspired by&nbsp;
+          The 3D pieces are draggable and move with the physics engine's
+          gravity.
+          <br />
+          Tech: React, Three.js, Physijs <br />
           <a
             className="website-link"
-            href="https://www.change.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            change.org.
-          </a>
-          <br />
-          Users register, create a profile, and sign for a cause.
-          <br />
-          The homepage's background-color can be customized.
-          <br />
-          <a
-            className="website-link"
-            href="https://sign-for-cause.herokuapp.com/petition"
+            href="https://3d-animation.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -242,7 +226,7 @@ function Projects() {
           &nbsp; | &nbsp;
           <a
             className="website-link"
-            href="https://github.com/AudreyKj/sign-for-cause"
+            href="https://github.com/AudreyKj/3d-animation"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -252,64 +236,20 @@ function Projects() {
 
         <div className="image-project-container">
           <img
-            className="image-project  margin-right"
-            src="facedetection-1.png"
-            alt="face-detection"
+            className="image-project margin-right"
+            src="3d-anim-1.png"
+            alt="3d-anim"
           />
-          <img
-            className="image-project"
-            src="facedetection-2.png"
-            alt="face-detection"
-          />
+          <img className="image-project" src="3d-anim-2.png" alt="3d-anim" />
         </div>
       </div>
 
       <div className="project-2" id="mag1">
         <p className="description">
-          WEBSITE FOR CREATIVE MAGAZINE (ISSUE II) <br />
-          synthetic velvet is an online, creative magazine which explores the
-          concept of time. Each issue takes the form of a website and is themed
-          around one specific hour. I've designed and developed the project's
-          second issue: a creative website inspired by the time 3:10 pm.
-          <br />
-          Tech: HTML, CSS, JavaScript, jQuery, Three.js <br />
-          <a
-            className="website-link"
-            href="https://www.syntheticvelvet-threeten.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            live site
-          </a>
-          &nbsp; | &nbsp;
-          <a
-            className="website-link"
-            href="https://github.com/AudreyKj/Three-Ten"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
-
-        <div className="image-project-container">
-          <img
-            className="image-project"
-            src="threeten-1.png  margin-right"
-            alt="threeten"
-          />
-          <img className="image-project" src="threeten-2.png" alt="threeten" />
-        </div>
-      </div>
-
-      <div className="project-last" id="mag2">
-        <p className="description">
           WEBSITE FOR CREATIVE MAGAZINE (ISSUE I)
           <br />
-          synthetic velvet is an online, creative magazine which explores the
-          concept of time. Each issue takes the form of a website and is themed
-          around one specific hour. I've designed and developed the project's
-          first issue: a creative website inspired by the time 5:40 am.
+          I've designed and developed a creative website with interactive UX for
+          online magazine synthetic velvet.
           <br />
           Tech: HTML, CSS, JavaScript, jQuery, Three.js <br />
           <a
@@ -333,14 +273,50 @@ function Projects() {
         <div className="image-project-container">
           <img
             className="image-project  margin-right"
-            src="fiveforty-2.png"
+            src="fiveforty-1.png"
             alt="fiveforty"
           />
           <img
             className="image-project"
-            src="fiveforty-3.png"
+            src="fiveforty-2.png"
             alt="fiveforty"
           />
+        </div>
+      </div>
+
+      <div className="project-last" id="mag2">
+        <p className="description">
+          WEBSITE FOR CREATIVE MAGAZINE (ISSUE II) <br />
+          I've designed and developed a creative website with interactive UX for
+          online magazine synthetic velvet.
+          <br />
+          Tech: HTML, CSS, JavaScript, jQuery, Three.js <br />
+          <a
+            className="website-link"
+            href="https://www.syntheticvelvet-threeten.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/Three-Ten"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </p>
+
+        <div className="image-project-container">
+          <img
+            className="image-project margin-right"
+            src="threeten1.png"
+            alt="threeten"
+          />
+          <img className="image-project" src="threeten2.png" alt="threeten" />
         </div>
       </div>
       <footer>
@@ -378,4 +354,48 @@ function Projects() {
 
 export default Projects;
 
-// last update on June, 28th 2020 at 18:45
+// <Picture
+//   sources={[
+//     {
+//       srcSet: "colorspot-2-x700.png",
+//       media: "(min-width: 2000px)"
+//     }
+//   ]}
+//   className="image-project"
+// />
+// <Picture
+//   sources={[
+//     {
+//       srcSet: "colorspot-2-x550.png",
+//       media: "(max-width: 700px)"
+//     }
+//   ]}
+//   className="image-project"
+// />
+// <Picture
+//   sources={[
+//     {
+//       srcSet: "colorspot-2-x400.png",
+//       media: "(max-width: 1200px)"
+//     }
+//   ]}
+//   className="image-project"
+// />
+// <Picture
+//   sources={[
+//     {
+//       srcSet: "colorspot-2-x350.png",
+//       media: "(max-width: 500px)"
+//     }
+//   ]}
+//   className="image-project"
+// />
+// <Picture
+//   sources={[
+//     {
+//       srcSet: "colorspot-2-x200.png",
+//       media: "(max-width: 450px)"
+//     }
+//   ]}
+//   className="image-project"
+// />
