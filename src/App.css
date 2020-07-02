@@ -456,10 +456,6 @@ div.project-first {
   border: none;
 
   color: #333;
-  border-top: none;
-  border-left: 30px solid #d6dada;
-  border-right: 30px solid #d6dada;
-  border-bottom: none;
 }
 
 div.project-2 {
@@ -471,8 +467,7 @@ div.project-2 {
   align-items: center;
 
   border-top: 10px solid #d6dada;
-  border-left: 30px solid #d6dada;
-  border-right: 30px solid #d6dada;
+
   border-bottom: none;
   color: #333;
 }
@@ -513,10 +508,8 @@ img.image-project {
   height: auto;
 
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
-
-  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+  -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 2000px) {
