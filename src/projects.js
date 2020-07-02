@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import "./App.css";
 import Weather from "./weather.js";
 
@@ -32,16 +33,18 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img
-            src="colorspot-1.png"
-            className="image-project margin-right"
-            alt="colorspot"
-          />
-          <img
-            src="colorspot-2.png"
-            className="image-project"
-            alt="colorspot"
-          />
+          <Fade>
+            <img
+              src="colorspot-1.png"
+              className="image-project margin-right"
+              alt="colorspot"
+            />
+            <img
+              src="colorspot-2.png"
+              className="image-project"
+              alt="colorspot"
+            />
+          </Fade>
         </div>
       </div>
 
@@ -73,16 +76,18 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img
-            className="image-project margin-right"
-            src="exchange1.png"
-            alt="exchange-app"
-          />
-          <img
-            className="image-project"
-            src="exchange2.png"
-            alt="exchange-app"
-          />
+          <Fade>
+            <img
+              className="image-project margin-right"
+              src="exchange1.png"
+              alt="exchange-app"
+            />
+            <img
+              className="image-project"
+              src="exchange2.png"
+              alt="exchange-app"
+            />
+          </Fade>
         </div>
       </div>
 
@@ -123,16 +128,18 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img
-            className="image-project  margin-right"
-            src="signcause1.png"
-            alt="signforcause"
-          />
-          <img
-            className="image-project"
-            src="signcause2.png"
-            alt="signforcause"
-          />
+          <Fade>
+            <img
+              className="image-project  margin-right"
+              src="signcause1.png"
+              alt="signforcause"
+            />
+            <img
+              className="image-project"
+              src="signcause2.png"
+              alt="signforcause"
+            />
+          </Fade>
         </div>
       </div>
 
@@ -163,12 +170,14 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img
-            className="image-project margin-right"
-            src="covid-1.png"
-            alt="covid"
-          />
-          <img className="image-project" src="covid-2.png" alt="covid" />
+          <Fade>
+            <img
+              className="image-project margin-right"
+              src="covid-1.png"
+              alt="covid"
+            />
+            <img className="image-project" src="covid-2.png" alt="covid" />
+          </Fade>
         </div>
       </div>
 
@@ -199,12 +208,18 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img
-            className="image-project margin-right"
-            src="face.png"
-            alt="face-detection"
-          />
-          <img className="image-project" src="face2.png" alt="face-detection" />
+          <Fade>
+            <img
+              className="image-project margin-right"
+              src="face.png"
+              alt="face-detection"
+            />
+            <img
+              className="image-project"
+              src="face2.png"
+              alt="face-detection"
+            />
+          </Fade>
         </div>
       </div>
 
@@ -235,12 +250,14 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img
-            className="image-project margin-right"
-            src="3d-anim-1.png"
-            alt="3d-anim"
-          />
-          <img className="image-project" src="3d-anim-2.png" alt="3d-anim" />
+          <Fade>
+            <img
+              className="image-project margin-right"
+              src="3d-anim-1.png"
+              alt="3d-anim"
+            />
+            <img className="image-project" src="3d-anim-2.png" alt="3d-anim" />
+          </Fade>
         </div>
       </div>
 
@@ -271,16 +288,18 @@ function Projects() {
           </a>
         </p>
         <div className="image-project-container">
-          <img
-            className="image-project  margin-right"
-            src="fiveforty-1.png"
-            alt="fiveforty"
-          />
-          <img
-            className="image-project"
-            src="fiveforty-2.png"
-            alt="fiveforty"
-          />
+          <Fade>
+            <img
+              className="image-project  margin-right"
+              src="fiveforty-1.png"
+              alt="fiveforty"
+            />
+            <img
+              className="image-project"
+              src="fiveforty-2.png"
+              alt="fiveforty"
+            />
+          </Fade>
         </div>
       </div>
 
@@ -311,14 +330,17 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <img
-            className="image-project margin-right"
-            src="threeten2.png"
-            alt="threeten"
-          />
-          <img className="image-project" src="s3.png" alt="threeten" />
+          <Fade>
+            <img
+              className="image-project margin-right"
+              src="threeten2.png"
+              alt="threeten"
+            />
+            <img className="image-project" src="s3.png" alt="threeten" />
+          </Fade>
         </div>
       </div>
+
       <footer>
         <a
           className="link-footer"
@@ -353,49 +375,3 @@ function Projects() {
 }
 
 export default Projects;
-
-// <Picture
-//   sources={[
-//     {
-//       srcSet: "colorspot-2-x700.png",
-//       media: "(min-width: 2000px)"
-//     }
-//   ]}
-//   className="image-project"
-// />
-// <Picture
-//   sources={[
-//     {
-//       srcSet: "colorspot-2-x550.png",
-//       media: "(max-width: 700px)"
-//     }
-//   ]}
-//   className="image-project"
-// />
-// <Picture
-//   sources={[
-//     {
-//       srcSet: "colorspot-2-x400.png",
-//       media: "(max-width: 1200px)"
-//     }
-//   ]}
-//   className="image-project"
-// />
-// <Picture
-//   sources={[
-//     {
-//       srcSet: "colorspot-2-x350.png",
-//       media: "(max-width: 500px)"
-//     }
-//   ]}
-//   className="image-project"
-// />
-// <Picture
-//   sources={[
-//     {
-//       srcSet: "colorspot-2-x200.png",
-//       media: "(max-width: 450px)"
-//     }
-//   ]}
-//   className="image-project"
-// />
