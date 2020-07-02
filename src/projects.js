@@ -214,7 +214,7 @@ function Projects() {
           The 3D pieces are draggable and move with the physics engine's
           gravity.
           <br />
-          Tech: React, Three.js, Physijs <br />
+          Tech: React, Three.js, physics engine Physijs <br />
           <a
             className="website-link"
             href="https://3d-animation.netlify.app/"
@@ -313,10 +313,10 @@ function Projects() {
         <div className="image-project-container">
           <img
             className="image-project margin-right"
-            src="threeten1.png"
+            src="threeten2.png"
             alt="threeten"
           />
-          <img className="image-project" src="threeten2.png" alt="threeten" />
+          <img className="image-project" src="s3.png" alt="threeten" />
         </div>
       </div>
       <footer>
