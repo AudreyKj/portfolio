@@ -253,7 +253,7 @@ function Projects() {
           <Fade>
             <img
               className="image-project margin-right"
-              src="3d-anim-1.png"
+              src="3danim-1.png"
               alt="3d-anim"
             />
             <img className="image-project" src="3d-anim-2.png" alt="3d-anim" />
@@ -336,7 +336,7 @@ function Projects() {
               src="threeten2.png"
               alt="threeten"
             />
-            <img className="image-project" src="s3.png" alt="threeten" />
+            <img className="image-project" src="threeten1.png" alt="threeten" />
           </Fade>
         </div>
       </div>

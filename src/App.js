@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 function App(props) {
   const toggleAbout = () => {
     const about = document.querySelector("div.about-container");
-    console.log("about", about);
+
     about.classList.toggle("show");
   };
 
