@@ -53,8 +53,8 @@ function Projects() {
           EXCHANGE APP <br />
           Users exchange languages, services, and skills with their friends.
           <br />
-          Tech: React, Redux, Node.js, socket.io, AWS/Cloudinary, PostgreSQL,
-          Three.js, Jest
+          Tech: CSS, React, Redux, Node.js, socket.io, AWS/Cloudinary,
+          PostgreSQL, Three.js, Jest
           <br />
           <a
             className="website-link"
@@ -106,7 +106,7 @@ function Projects() {
           <br />
           Users register, create a profile, and sign for a cause.
           <br />
-          Tech: Node.js, Handlebars.js, PostgreSQL, SuperTest
+          Tech: HTML, CSS, Node.js, Handlebars.js, PostgreSQL, SuperTest
           <br />
           <a
             className="website-link"
@@ -186,7 +186,8 @@ function Projects() {
           FACE-DETECTION APP <br />
           Users can use the API, upload selfies, and leave comments.
           <br />
-          Tech: Vue.js, Node.js, AWS/Cloudinary, PostgreSQL, face-api.js
+          Tech: HTML, CSS, Vue.js, Node.js, AWS/Cloudinary, PostgreSQL,
+          face-api.js
           <br />
           <a
             className="website-link"
@@ -229,7 +230,7 @@ function Projects() {
           The 3D pieces are draggable and move with the physics engine's
           gravity.
           <br />
-          Tech: React, Three.js, physics engine Physijs <br />
+          Tech: CSS, React, Three.js, physics engine Physijs <br />
           <a
             className="website-link"
             href="https://3d-animation.netlify.app/"
