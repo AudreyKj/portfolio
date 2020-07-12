@@ -3,6 +3,19 @@ import Fade from "react-reveal/Fade";
 import "./App.css";
 import Weather from "./weather.js";
 
+import corona_video from "./videos/covid-emotions.mp4";
+import { Waypoint } from "react-waypoint";
+
+//VIDEO5
+const video5play = () => {
+  document.querySelector(".video5").play();
+};
+
+const video5stop = () => {
+  document.querySelector(".video5").pause();
+  document.querySelector(".video5").currentTime = 0;
+};
+
 function Projects() {
   return (
     <div className="projects-wrapper">
@@ -170,13 +183,19 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
+          <Waypoint onEnter={() => video5play()} onLeave={() => video5stop()} />
           <Fade>
-            <img
-              className="image-project margin-right"
-              src="covid-1.png"
-              alt="covid"
-            />
-            <img className="image-project" src="covid-2.png" alt="covid" />
+            <video
+              className="video5"
+              width="700"
+              height="460"
+              muted
+              playsInline
+              loop
+            >
+              <source src={corona_video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </Fade>
         </div>
       </div>
@@ -376,3 +395,10 @@ function Projects() {
 }
 
 export default Projects;
+
+// <img
+//   className="image-project margin-right"
+//   src="covid-1.png"
+//   alt="covid"
+// />
+// <img className="image-project" src="covid-2.png" alt="covid" />
