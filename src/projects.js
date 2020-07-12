@@ -2,18 +2,94 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import "./App.css";
 import Weather from "./weather.js";
-
-import corona_video from "./videos/covid-emotions.mp4";
 import { Waypoint } from "react-waypoint";
+import corona_video from "./videos/covid-app.mp4";
+import color_spot from "./videos/color-spot.mp4";
+import social_network from "./videos/socialnetwork.mp4";
+import sign_cause from "./videos/sign-cause.mp4";
+import imageboard_video from "./videos/imageboard.mp4";
+import anim_3d from "./videos/3d-anim.mp4";
+import threeten_video from "./videos/threeten_new.mp4";
+import fiveforty_video from "./videos/fiveforty_new.mp4";
 
-//VIDEO5
-const video5play = () => {
-  document.querySelector(".video5").play();
+//COLOR SPOT
+const color_spot_play = () => {
+  document.querySelector(".color-spot").play();
 };
 
-const video5stop = () => {
-  document.querySelector(".video5").pause();
-  document.querySelector(".video5").currentTime = 0;
+const color_spot_stop = () => {
+  document.querySelector(".color-spot").pause();
+  document.querySelector(".color-spot").currentTime = 0;
+};
+
+//EXCHANGE
+const exchange_play = () => {
+  document.querySelector(".exchange").play();
+};
+
+const exchange_stop = () => {
+  document.querySelector(".exchange").pause();
+  document.querySelector(".exchange").currentTime = 0;
+};
+
+//SIGN FOR CAUSE
+const signcause_play = () => {
+  document.querySelector(".signcause").play();
+};
+
+const signcause_stop = () => {
+  document.querySelector(".signcause").pause();
+  document.querySelector(".signcause").currentTime = 0;
+};
+
+//COVID
+const covid_play = () => {
+  document.querySelector(".covid").play();
+};
+
+const covid_stop = () => {
+  document.querySelector(".covid").pause();
+  document.querySelector(".covid").currentTime = 0;
+};
+
+//FACE-DETECTION
+const facedetection_play = () => {
+  document.querySelector(".facedetection").play();
+};
+
+const facedetection_stop = () => {
+  document.querySelector(".facedetection").pause();
+  document.querySelector(".facedetection").currentTime = 0;
+};
+
+//3d ANIM
+const anim3d_play = () => {
+  document.querySelector(".anim3d").play();
+};
+
+const anim3d_stop = () => {
+  document.querySelector(".anim3d").pause();
+  document.querySelector(".anim3d").currentTime = 0;
+};
+
+//THREE TEN - CREATIVE MAGAZINE
+const threeten_play = () => {
+  document.querySelector(".threeten").play();
+};
+
+const threeten_stop = () => {
+  document.querySelector(".threeten").pause();
+  document.querySelector(".threeten").currentTime = 0;
+};
+
+//FIVE FORTY - CREATIVE MAGAZINE
+const fiveforty_play = () => {
+  document.querySelector(".fiveforty").play();
+};
+
+const fiveforty_stop = () => {
+  document.querySelector(".fiveforty").pause();
+  document.querySelector(".fiveforty").currentTime = 0;
 };
 
 function Projects() {
@@ -21,11 +97,14 @@ function Projects() {
     <div className="projects-wrapper">
       <div className="project-first" id="colorspot">
         <p className="description">
-          COLOR SEARCH APP <br />
+          <span className="project-title"> COLOR SEARCH APP </span> <br />
           Software for searching and categorizing colors. <br />
           An "admin" page visualizes data from the app's users.
           <br />
-          Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL <br />
+          <span className="tech">
+            Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL
+          </span>
+          <br />
           <a
             className="website-link"
             href="https://color-spot.herokuapp.com/"
@@ -46,28 +125,28 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
+          <Waypoint
+            onEnter={() => color_spot_play()}
+            onLeave={() => color_spot_stop()}
+          />
           <Fade>
-            <img
-              src="colorspot-1.png"
-              className="image-project margin-right"
-              alt="colorspot"
-            />
-            <img
-              src="colorspot-2.png"
-              className="image-project"
-              alt="colorspot"
-            />
+            <video className="color-spot" muted playsInline loop>
+              <source src={color_spot} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </Fade>
         </div>
       </div>
 
       <div className="project-2" id="exchange">
         <p className="description">
-          EXCHANGE APP <br />
+          <span className="project-title"> EXCHANGE APP </span> <br />
           Users exchange languages, services, and skills with their friends.
           <br />
-          Tech: CSS, React, Redux, Node.js, socket.io, AWS/Cloudinary,
-          PostgreSQL, Three.js, Jest
+          <span className="tech">
+            Tech: CSS, React, Redux, Node.js, socket.io, AWS/Cloudinary,
+            PostgreSQL, Three.js, Jest
+          </span>
           <br />
           <a
             className="website-link"
@@ -89,24 +168,22 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
+          <Waypoint
+            onEnter={() => exchange_play()}
+            onLeave={() => exchange_stop()}
+          />
           <Fade>
-            <img
-              className="image-project margin-right"
-              src="exchange1.png"
-              alt="exchange-app"
-            />
-            <img
-              className="image-project"
-              src="exchange2.png"
-              alt="exchange-app"
-            />
+            <video className="exchange" muted playsInline loop>
+              <source src={social_network} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </Fade>
         </div>
       </div>
 
       <div className="project-2" id="signcause">
         <p className="description">
-          SIGN FOR CAUSE APP <br />
+          <span className="project-title"> SIGN FOR CAUSE APP </span> <br />
           App inspired by&nbsp;
           <a
             className="website-link"
@@ -119,7 +196,9 @@ function Projects() {
           <br />
           Users register, create a profile, and sign for a cause.
           <br />
-          Tech: HTML, CSS, Node.js, Handlebars.js, PostgreSQL, SuperTest
+          <span className="tech">
+            Tech: HTML, CSS, Node.js, Handlebars.js, PostgreSQL, SuperTest
+          </span>
           <br />
           <a
             className="website-link"
@@ -141,27 +220,27 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
+          <Waypoint
+            onEnter={() => signcause_play()}
+            onLeave={() => signcause_stop()}
+          />
           <Fade>
-            <img
-              className="image-project  margin-right"
-              src="signcause1.png"
-              alt="signforcause"
-            />
-            <img
-              className="image-project"
-              src="signcause2.png"
-              alt="signforcause"
-            />
+            <video className="signcause" muted playsInline loop>
+              <source src={sign_cause} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </Fade>
         </div>
       </div>
 
       <div className="project-2" id="covid19">
         <p className="description">
-          COVID-19 APP <br />
+          <span className="project-title"> COVID-19 APP </span> <br />
           Users share their personal experiences of the COVID-19 outbreak.
-          <br />A dashboard visualizes data from the submissions.
-          <br /> Tech: SASS/SCSS, React, Node.js, PostgreSQL, Jest, chart.js
+          <br />A dashboard visualizes data from the submissions. <br />
+          <span className="tech">
+            Tech: SASS/SCSS, React, Node.js, PostgreSQL, Jest, chart.js
+          </span>
           <br />
           <a
             className="website-link"
@@ -183,16 +262,9 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
-          <Waypoint onEnter={() => video5play()} onLeave={() => video5stop()} />
+          <Waypoint onEnter={() => covid_play()} onLeave={() => covid_stop()} />
           <Fade>
-            <video
-              className="video5"
-              width="700"
-              height="460"
-              muted
-              playsInline
-              loop
-            >
+            <video className="covid" muted playsInline loop>
               <source src={corona_video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -202,11 +274,13 @@ function Projects() {
 
       <div className="project-2" id="facedetection">
         <p className="description">
-          FACE-DETECTION APP <br />
+          <span className="project-title"> FACE-DETECTION APP </span> <br />
           Users can use the API, upload selfies, and leave comments.
           <br />
-          Tech: HTML, CSS, Vue.js, Node.js, AWS/Cloudinary, PostgreSQL,
-          face-api.js
+          <span className="tech">
+            Tech: HTML, CSS, Vue.js, Node.js, AWS/Cloudinary, PostgreSQL,
+            face-api.js
+          </span>
           <br />
           <a
             className="website-link"
@@ -228,28 +302,29 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
+          <Waypoint
+            onEnter={() => facedetection_play()}
+            onLeave={() => facedetection_stop()}
+          />
           <Fade>
-            <img
-              className="image-project margin-right"
-              src="face.png"
-              alt="face-detection"
-            />
-            <img
-              className="image-project"
-              src="face2.png"
-              alt="face-detection"
-            />
+            <video className="facedetection" muted playsInline loop>
+              <source src={imageboard_video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </Fade>
         </div>
       </div>
 
       <div className="project-2" id="3danim">
         <p className="description">
-          3-D WEB ANIMATION <br />
+          <span className="project-title"> 3-D WEB ANIMATION </span> <br />
           The 3D pieces are draggable and move with the physics engine's
           gravity.
           <br />
-          Tech: CSS, React, Three.js, physics engine Physijs <br />
+          <span className="tech">
+            Tech: CSS, React, Three.js, physics engine Physijs
+          </span>
+          <br />
           <a
             className="website-link"
             href="https://3d-animation.netlify.app/"
@@ -270,25 +345,31 @@ function Projects() {
         </p>
 
         <div className="image-project-container">
+          <Waypoint
+            onEnter={() => anim3d_play()}
+            onLeave={() => anim3d_stop()}
+          />
           <Fade>
-            <img
-              className="image-project margin-right"
-              src="3danim-1.png"
-              alt="3d-anim"
-            />
-            <img className="image-project" src="3d-anim-2.png" alt="3d-anim" />
+            <video className="anim3d" muted playsInline loop>
+              <source src={anim_3d} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </Fade>
         </div>
       </div>
 
-      <div className="project-2" id="mag1">
+      <div className="project-last" id="mag1">
         <p className="description">
-          WEBSITE FOR CREATIVE MAGAZINE (ISSUE I)
+          <span className="project-title">WEBSITES FOR CREATIVE MAGAZINE</span>
           <br />
-          I've designed and developed a creative website with interactive UX for
-          online magazine synthetic velvet.
+          I've designed and developed 2 creative websites with interactive UX
+          for online magazine synthetic velvet.
           <br />
-          Tech: HTML, CSS, JavaScript, jQuery, Three.js <br />
+          <span className="tech">
+            Tech: HTML, CSS, JavaScript, jQuery, Three.js
+          </span>
+          <br />
+          ISSUE I:&nbsp;
           <a
             className="website-link"
             href="https://www.syntheticvelvet-fiveforty.com/"
@@ -306,30 +387,8 @@ function Projects() {
           >
             GitHub
           </a>
-        </p>
-        <div className="image-project-container">
-          <Fade>
-            <img
-              className="image-project  margin-right"
-              src="fiveforty-1.png"
-              alt="fiveforty"
-            />
-            <img
-              className="image-project"
-              src="fiveforty-2.png"
-              alt="fiveforty"
-            />
-          </Fade>
-        </div>
-      </div>
-
-      <div className="project-last" id="mag2">
-        <p className="description">
-          WEBSITE FOR CREATIVE MAGAZINE (ISSUE II) <br />
-          I've designed and developed a creative website with interactive UX for
-          online magazine synthetic velvet.
           <br />
-          Tech: HTML, CSS, JavaScript, jQuery, Three.js <br />
+          ISSUE II:&nbsp;
           <a
             className="website-link"
             href="https://www.syntheticvelvet-threeten.com/"
@@ -348,15 +407,26 @@ function Projects() {
             GitHub
           </a>
         </p>
-
-        <div className="image-project-container">
+        <div className="image-project-container-magazine">
+          <Waypoint
+            onEnter={() => fiveforty_play()}
+            onLeave={() => fiveforty_stop()}
+          />
+          <Waypoint
+            onEnter={() => threeten_play()}
+            onLeave={() => threeten_stop()}
+          />
           <Fade>
-            <img
-              className="image-project margin-right"
-              src="threeten2.png"
-              alt="threeten"
-            />
-            <img className="image-project" src="threeten1.png" alt="threeten" />
+            <video className="fiveforty" muted playsInline loop>
+              <source src={fiveforty_video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Fade>
+          <Fade>
+            <video className="threeten" muted playsInline loop>
+              <source src={threeten_video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </Fade>
         </div>
       </div>
@@ -395,10 +465,3 @@ function Projects() {
 }
 
 export default Projects;
-
-// <img
-//   className="image-project margin-right"
-//   src="covid-1.png"
-//   alt="covid"
-// />
-// <img className="image-project" src="covid-2.png" alt="covid" />
