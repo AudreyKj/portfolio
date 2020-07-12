@@ -143,7 +143,7 @@ a.links-home:hover {
   a.links-home,
   a.links-home:active,
   a.links-home:visited {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -332,15 +332,6 @@ a.project-index-links:visited {
   }
 }
 
-@media (max-width: 400px) {
-  a.project-index-links,
-  a.project-index-links:active,
-  a.project-index-links:visited,
-  span.project {
-    font-size: 1.5rem;
-  }
-}
-
 @media (max-width: 600px) {
   a.project-index-links,
   a.project-index-links:active,
@@ -350,7 +341,16 @@ a.project-index-links:visited {
   }
 
   div.projects-index {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  a.project-index-links,
+  a.project-index-links:active,
+  a.project-index-links:visited,
+  span.project {
+    font-size: 1.5rem;
   }
 }
 
@@ -359,7 +359,7 @@ a.project-index-links:visited {
   a.project-index-links:active,
   a.project-index-links:visited,
   span.project {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -378,32 +378,6 @@ a.project-index-links:hover {
   cursor: pointer;
   z-index: 100;
   opacity: 1;
-}
-
-/* HOVER IMAGE EFFECT */
-div.hovereffect-container {
-  width: 100%;
-  height: 100%;
-  padding-top: 6%;
-  padding-bottom: 20px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (max-width: 1130px) {
-  div.hovereffect-container {
-    padding-top: 25%;
-    padding-right: 30px;
-  }
-}
-
-@media (max-width: 390px) {
-  div.hovereffect-container {
-    padding-top: 0;
-    padding-right: 30px;
-  }
 }
 
 /* PROJECTS CONTAINER */
