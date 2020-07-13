@@ -98,8 +98,8 @@ function Projects() {
       <div className="project-first" id="colorspot">
         <p className="description">
           <span className="project-title"> COLOR SEARCH APP </span> <br />
-          Software for searching and categorizing colors. <br />
-          An "admin" page visualizes data from the app's users.
+          Software for searching and categorizing colors. An "admin" page
+          visualizes data from the app's users.
           <br />
           <span className="tech">
             Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL

@@ -31,6 +31,7 @@ body {
 div.temp {
   background-color: #4a5d5a;
   color: #f7f7f7;
+
   width: 100%;
   height: 100%;
   position: fixed;
@@ -39,6 +40,7 @@ div.temp {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   font-family: "Questrial", sans-serif;
   text-align: center;
 }
@@ -49,17 +51,18 @@ h1 {
 
 /* HOMEPAGE */
 div.home {
-  position: relative;
   background-color: #ececec;
   width: 100%;
   min-height: 100vh;
 
+  position: relative;
   overflow: hidden;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+
   padding-bottom: 2%;
   -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
@@ -73,6 +76,7 @@ header {
   font-size: 2.5rem;
   width: 100%;
   height: 100px;
+
   display: flex;
   align-items: center;
   background-color: #ececec;
@@ -96,7 +100,7 @@ span.name {
 
 @media (max-width: 700px) and (max-height: 380px) {
   header {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -111,7 +115,7 @@ span.name {
   a.project-index-links:active,
   a.project-index-links:visited,
   span.project {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -134,7 +138,7 @@ a.links-home:hover {
   a.links-home,
   a.links-home:active,
   a.links-home:visited {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-right: 0;
   }
 }
@@ -143,7 +147,7 @@ a.links-home:hover {
   a.links-home,
   a.links-home:active,
   a.links-home:visited {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -220,8 +224,8 @@ div.about-container {
 
 @media (min-width: 2000px) {
   div.about-container {
-    width: 500px;
-    transform: translate(500px, 0);
+    width: 600px;
+    transform: translate(610px, 0);
     transition: transform 0.7s;
   }
 }
@@ -231,8 +235,8 @@ div.about-container.show {
 }
 
 section.about {
-  padding-left: 30px;
-  padding-right: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 div.close {
@@ -243,6 +247,12 @@ div.close {
   cursor: pointer;
   text-align: center;
   color: #ccc;
+}
+
+@media (min-width: 2000px) {
+  div.close {
+    font-size: 3rem;
+  }
 }
 
 div.close:hover {
@@ -273,7 +283,7 @@ p.about-text {
 
 @media (min-width: 2000px) {
   p.about-text {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -310,6 +320,12 @@ span.project {
   display: block;
 }
 
+@media (max-width: 700px) and (max-height: 380px) {
+  span.project {
+    font-size: 1rem;
+  }
+}
+
 a.project-index-links,
 a.project-index-links:active,
 a.project-index-links:visited {
@@ -323,11 +339,6 @@ a.project-index-links:visited {
   font-stretch: normal;
   z-index: 100;
   opacity: 0.7;
-}
-
-.break::after {
-  content: "\a";
-  white-space: pre;
 }
 
 @media (max-width: 965px) {
@@ -517,7 +528,7 @@ video.threeten {
   video.fiveforty {
     width: 400px;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -573,15 +584,9 @@ p.description {
   }
 }
 
-@media (max-width: 450px) {
-  p.description {
-    width: 100%;
-  }
-}
-
 @media (min-width: 2000px) {
   p.description {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 

@@ -83,5 +83,3 @@ function App(props) {
 }
 
 export default App;
-
-// <div className="black-strip"> </div>
