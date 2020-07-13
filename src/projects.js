@@ -10,7 +10,7 @@ import sign_cause from "./videos/sign-cause.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
 import anim_3d from "./videos/3d-anim.mp4";
 import threeten_video from "./videos/threeten_new.mp4";
-import fiveforty_video from "./videos/fiveforty_new.mp4";
+import fiveforty_video from "./videos/fiveforty-new.mp4";
 
 //COLOR SPOT
 const color_spot_play = () => {
@@ -275,7 +275,7 @@ function Projects() {
       <div className="project-2" id="facedetection">
         <p className="description">
           <span className="project-title"> FACE-DETECTION APP </span> <br />
-          Users can use the API, upload selfies, and leave comments.
+          Users use the face-detection tool, upload selfies, and leave comments.
           <br />
           <span className="tech">
             Tech: HTML, CSS, Vue.js, Node.js, AWS/Cloudinary, PostgreSQL,
@@ -317,9 +317,12 @@ function Projects() {
 
       <div className="project-2" id="3danim">
         <p className="description">
-          <span className="project-title"> 3-D WEB ANIMATION </span> <br />
-          The 3D pieces are draggable and move with the physics engine's
-          gravity.
+          <span className="project-title">
+            3-D WEB ANIMATION WITH PHYSICS ENGINE
+          </span>
+          <br />
+          The 3D pieces move with the physics engine's gravity and are
+          draggable.
           <br />
           <span className="tech">
             Tech: CSS, React, Three.js, physics engine Physijs
