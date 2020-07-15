@@ -102,7 +102,8 @@ function Projects() {
           visualizes data from the app's users.
           <br />
           <span className="tech">
-            Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL
+            Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL, color-thief
+            API
           </span>
           <br />
           <a
