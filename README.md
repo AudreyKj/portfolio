@@ -1,8 +1,8 @@
 # portfolio made with React
 
-Portfolio with modular design made with create-react-app + using Weather API.
+Portfolio with minimalist design made with React/CRA.
 
 ## Tech
 
-**Stack**: CSS, JavaScript, React <br />
+**Stack**: CSS, JavaScript, React, Weather API <br />
 **Deployment**: Heroku
