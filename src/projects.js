@@ -366,7 +366,7 @@ function Projects() {
           <span className="project-title">WEBSITES FOR CREATIVE MAGAZINE</span>
           <br />
           I've designed and developed 2 creative websites with interactive UX
-          for online magazine synthetic velvet.
+          for an online magazine project.
           <br />
           <span className="tech">
             Tech: HTML, CSS, JavaScript, jQuery, Three.js
