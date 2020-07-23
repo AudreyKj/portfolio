@@ -73,7 +73,7 @@ div.home {
 header {
   position: absolute;
   top: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 100%;
   height: 100px;
 
@@ -89,10 +89,6 @@ span.name {
 }
 
 @media (max-width: 600px) {
-  header {
-    font-size: 2rem;
-  }
-
   span.name {
     left: 15px;
   }
