@@ -50,19 +50,19 @@ function App(props) {
             color search app
           </a>
 
-          <a href="#exchange" className="project-index-links  break">
-            exchange app
-          </a>
-          <a href="#signcause" className="project-index-links">
-            sign for a cause app
+          <a href="#facedetection" className="project-index-links">
+            face-detection app
           </a>
 
           <a href="#covid19" className="project-index-links break">
             covid19 app
           </a>
 
-          <a href="#facedetection" className="project-index-links">
-            face-detection app
+          <a href="#exchange" className="project-index-links  break">
+            exchange app
+          </a>
+          <a href="#signcause" className="project-index-links">
+            sign for a cause app
           </a>
 
           <a href="#3danim" className="project-index-links break">

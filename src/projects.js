@@ -98,8 +98,8 @@ function Projects() {
       <div className="project-first" id="colorspot">
         <p className="description">
           <span className="project-title"> COLOR SEARCH APP </span> <br />
-          Software for searching and categorizing colors. An "admin" page
-          visualizes data from the app's users.
+          Software for searching and categorizing colors that uses data
+          visualization.
           <br />
           <span className="tech">
             Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL, Material UI
@@ -132,6 +132,88 @@ function Projects() {
           <Fade>
             <video className="color-spot" muted playsInline loop>
               <source src={color_spot} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Fade>
+        </div>
+      </div>
+
+      <div className="project-2" id="facedetection">
+        <p className="description">
+          <span className="project-title"> FACE-DETECTION APP </span> <br />
+          Users use the face-detection tool, upload selfies, and leave comments.
+          <br />
+          <span className="tech">
+            Tech: HTML, CSS, Vue.js, Node.js, AWS/Cloudinary, PostgreSQL,
+            face-api.js
+          </span>
+          <br />
+          <a
+            className="website-link"
+            href="https://face-face-face.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/Face-dectection-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </p>
+
+        <div className="image-project-container">
+          <Waypoint
+            onEnter={() => facedetection_play()}
+            onLeave={() => facedetection_stop()}
+          />
+          <Fade>
+            <video className="facedetection" muted playsInline loop>
+              <source src={imageboard_video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Fade>
+        </div>
+      </div>
+
+      <div className="project-2" id="covid19">
+        <p className="description">
+          <span className="project-title"> COVID-19 APP </span> <br />
+          Users share their personal experiences of the COVID-19 outbreak.
+          <br />A dashboard visualizes data from the submissions. <br />
+          <span className="tech">
+            Tech: SASS/SCSS, React, Node.js, PostgreSQL, Jest, chart.js
+          </span>
+          <br />
+          <a
+            className="website-link"
+            href="https://corona-emotions.club/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/corona-emotions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </p>
+
+        <div className="image-project-container">
+          <Waypoint onEnter={() => covid_play()} onLeave={() => covid_stop()} />
+          <Fade>
+            <video className="covid" muted playsInline loop>
+              <source src={corona_video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Fade>
@@ -227,88 +309,6 @@ function Projects() {
           <Fade>
             <video className="signcause" muted playsInline loop>
               <source src={sign_cause} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </Fade>
-        </div>
-      </div>
-
-      <div className="project-2" id="covid19">
-        <p className="description">
-          <span className="project-title"> COVID-19 APP </span> <br />
-          Users share their personal experiences of the COVID-19 outbreak.
-          <br />A dashboard visualizes data from the submissions. <br />
-          <span className="tech">
-            Tech: SASS/SCSS, React, Node.js, PostgreSQL, Jest, chart.js
-          </span>
-          <br />
-          <a
-            className="website-link"
-            href="https://corona-emotions.club/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            live site
-          </a>
-          &nbsp; | &nbsp;
-          <a
-            className="website-link"
-            href="https://github.com/AudreyKj/corona-emotions"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
-
-        <div className="image-project-container">
-          <Waypoint onEnter={() => covid_play()} onLeave={() => covid_stop()} />
-          <Fade>
-            <video className="covid" muted playsInline loop>
-              <source src={corona_video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </Fade>
-        </div>
-      </div>
-
-      <div className="project-2" id="facedetection">
-        <p className="description">
-          <span className="project-title"> FACE-DETECTION APP </span> <br />
-          Users use the face-detection tool, upload selfies, and leave comments.
-          <br />
-          <span className="tech">
-            Tech: HTML, CSS, Vue.js, Node.js, AWS/Cloudinary, PostgreSQL,
-            face-api.js
-          </span>
-          <br />
-          <a
-            className="website-link"
-            href="https://face-face-face.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            live site
-          </a>
-          &nbsp; | &nbsp;
-          <a
-            className="website-link"
-            href="https://github.com/AudreyKj/Face-dectection-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
-
-        <div className="image-project-container">
-          <Waypoint
-            onEnter={() => facedetection_play()}
-            onLeave={() => facedetection_stop()}
-          />
-          <Fade>
-            <video className="facedetection" muted playsInline loop>
-              <source src={imageboard_video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Fade>
