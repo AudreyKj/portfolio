@@ -102,7 +102,8 @@ function Projects() {
           visualization.
           <br />
           <span className="tech">
-            Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL, Material UI
+            Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL, Google Auth,
+            Material-UI
           </span>
           <br />
           <a
