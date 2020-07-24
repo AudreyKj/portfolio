@@ -5,7 +5,7 @@ import Weather from "./weather.js";
 import { Waypoint } from "react-waypoint";
 import corona_video from "./videos/covid-app.mp4";
 import color_spot from "./videos/color-spot.mp4";
-import social_network from "./videos/socialnetwork.mp4";
+import social_network from "./videos/exchange-network.mp4";
 import sign_cause from "./videos/sign-cause.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
 import anim_3d from "./videos/3d-anim.mp4";
@@ -98,12 +98,12 @@ function Projects() {
       <div className="project-first" id="colorspot">
         <p className="description">
           <span className="project-title"> COLOR SEARCH APP </span> <br />
-          Software for searching and categorizing colors that uses data
+          Software for searching and categorizing colors which also uses data
           visualization.
           <br />
           <span className="tech">
             Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL, Google Auth,
-            Material-UI
+            Material-UI, Jest
           </span>
           <br />
           <a
@@ -133,6 +133,50 @@ function Projects() {
           <Fade>
             <video className="color-spot" muted playsInline loop>
               <source src={color_spot} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Fade>
+        </div>
+      </div>
+
+      <div className="project-2" id="exchange">
+        <p className="description">
+          <span className="project-title"> EXCHANGE APP </span> <br />
+          App where users exchange languages, services, and skills with their
+          friends.
+          <br />
+          <span className="tech">
+            Tech: SASS/SCSS, React, Redux, Node.js, socket.io, AWS/Cloudinary,
+            PostgreSQL, Three.js, Material-UI, Jest
+          </span>
+          <br />
+          <a
+            className="website-link"
+            href="https://the-exchange-network.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/the-exchange-network"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </p>
+
+        <div className="image-project-container">
+          <Waypoint
+            onEnter={() => exchange_play()}
+            onLeave={() => exchange_stop()}
+          />
+          <Fade>
+            <video className="exchange" muted playsInline loop>
+              <source src={social_network} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Fade>
@@ -215,49 +259,6 @@ function Projects() {
           <Fade>
             <video className="covid" muted playsInline loop>
               <source src={corona_video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </Fade>
-        </div>
-      </div>
-
-      <div className="project-2" id="exchange">
-        <p className="description">
-          <span className="project-title"> EXCHANGE APP </span> <br />
-          Users exchange languages, services, and skills with their friends.
-          <br />
-          <span className="tech">
-            Tech: CSS, React, Redux, Node.js, socket.io, AWS/Cloudinary,
-            PostgreSQL, Three.js, Jest
-          </span>
-          <br />
-          <a
-            className="website-link"
-            href="https://the-exchange-network.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            live site
-          </a>
-          &nbsp; | &nbsp;
-          <a
-            className="website-link"
-            href="https://github.com/AudreyKj/the-exchange-network"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
-
-        <div className="image-project-container">
-          <Waypoint
-            onEnter={() => exchange_play()}
-            onLeave={() => exchange_stop()}
-          />
-          <Fade>
-            <video className="exchange" muted playsInline loop>
-              <source src={social_network} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Fade>
