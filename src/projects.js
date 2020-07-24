@@ -98,7 +98,7 @@ function Projects() {
       <div className="project-first" id="colorspot">
         <p className="description">
           <span className="project-title"> COLOR SEARCH APP </span> <br />
-          Software for searching and categorizing colors which also uses data
+          Software for searching and categorizing colors which uses data
           visualization.
           <br />
           <span className="tech">
