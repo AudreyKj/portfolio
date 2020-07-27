@@ -8,7 +8,6 @@ import color_spot from "./videos/color-spot.mp4";
 import social_network from "./videos/exchange-network.mp4";
 import sign_cause from "./videos/sign-cause.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
-import anim_3d from "./videos/3d-anim.mp4";
 import threeten_video from "./videos/threeten_new.mp4";
 import fiveforty_video from "./videos/fiveforty-new.mp4";
 
@@ -60,16 +59,6 @@ const facedetection_play = () => {
 const facedetection_stop = () => {
   document.querySelector(".facedetection").pause();
   document.querySelector(".facedetection").currentTime = 0;
-};
-
-//3d ANIM
-const anim3d_play = () => {
-  document.querySelector(".anim3d").play();
-};
-
-const anim3d_stop = () => {
-  document.querySelector(".anim3d").pause();
-  document.querySelector(".anim3d").currentTime = 0;
 };
 
 //THREE TEN - CREATIVE MAGAZINE
@@ -311,52 +300,6 @@ function Projects() {
           <Fade>
             <video className="signcause" muted playsInline loop>
               <source src={sign_cause} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </Fade>
-        </div>
-      </div>
-
-      <div className="project-2" id="3danim">
-        <p className="description">
-          <span className="project-title">
-            3-D WEB ANIMATION WITH PHYSICS ENGINE
-          </span>
-          <br />
-          The 3D pieces move with the physics engine's gravity and are
-          draggable.
-          <br />
-          <span className="tech">
-            Tech: CSS, React, Three.js, physics engine Physijs
-          </span>
-          <br />
-          <a
-            className="website-link"
-            href="https://3d-animation.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            live site
-          </a>
-          &nbsp; | &nbsp;
-          <a
-            className="website-link"
-            href="https://github.com/AudreyKj/3d-animation"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
-
-        <div className="image-project-container">
-          <Waypoint
-            onEnter={() => anim3d_play()}
-            onLeave={() => anim3d_stop()}
-          />
-          <Fade>
-            <video className="anim3d" muted playsInline loop>
-              <source src={anim_3d} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Fade>

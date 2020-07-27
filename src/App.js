@@ -18,7 +18,7 @@ function App(props) {
         <meta name="description" content="Audrey Kadjar portfolio" />
         <meta
           name="keywords"
-          content="portfolio, web development, web developer, full stack"
+          content="portfolio, web development, web developer, full stack, frontend, UX"
         />
         <meta name="application-name" content="portfolio" />
         <meta name="theme-color" content="#a7b9c4" />
@@ -63,10 +63,6 @@ function App(props) {
 
           <a href="#signcause" className="project-index-links">
             sign for a cause app
-          </a>
-
-          <a href="#3danim" className="project-index-links break">
-            3-d web animation
           </a>
 
           <a href="#mag1" className="project-index-links">

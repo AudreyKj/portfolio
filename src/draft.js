@@ -1,5 +1,74 @@
 /*
 
+3D ANIMATION PROJECT 
+
+app:
+<a href="#3danim" className="project-index-links break">
+  3-d web animation
+</a>
+
+projects:
+import anim_3d from "./videos/3d-anim.mp4";
+
+//3d ANIM
+const anim3d_play = () => {
+  document.querySelector(".anim3d").play();
+};
+
+const anim3d_stop = () => {
+  document.querySelector(".anim3d").pause();
+  document.querySelector(".anim3d").currentTime = 0;
+};
+
+
+<div className="project-2" id="3danim">
+  <p className="description">
+    <span className="project-title">
+      3-D WEB ANIMATION WITH PHYSICS ENGINE
+    </span>
+    <br />
+    The 3D pieces move with the physics engine's gravity and are
+    draggable.
+    <br />
+    <span className="tech">
+      Tech: CSS, React, Three.js, physics engine Physijs
+    </span>
+    <br />
+    <a
+      className="website-link"
+      href="https://3d-animation.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      live site
+    </a>
+    &nbsp; | &nbsp;
+    <a
+      className="website-link"
+      href="https://github.com/AudreyKj/3d-animation"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub
+    </a>
+  </p>
+
+  <div className="image-project-container">
+    <Waypoint
+      onEnter={() => anim3d_play()}
+      onLeave={() => anim3d_stop()}
+    />
+    <Fade>
+      <video className="anim3d" muted playsInline loop>
+        <source src={anim_3d} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </Fade>
+  </div>
+</div>
+
+
+
 HOVER EFFECT
 
 const displayColorSpot = () => {
