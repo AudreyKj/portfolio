@@ -31,6 +31,16 @@ const exchange_stop = () => {
   document.querySelector(".exchange").currentTime = 0;
 };
 
+//FACE-DETECTION
+const facedetection_play = () => {
+  document.querySelector(".facedetection").play();
+};
+
+const facedetection_stop = () => {
+  document.querySelector(".facedetection").pause();
+  document.querySelector(".facedetection").currentTime = 0;
+};
+
 //SIGN FOR CAUSE
 const signcause_play = () => {
   document.querySelector(".signcause").play();
@@ -49,16 +59,6 @@ const covid_play = () => {
 const covid_stop = () => {
   document.querySelector(".covid").pause();
   document.querySelector(".covid").currentTime = 0;
-};
-
-//FACE-DETECTION
-const facedetection_play = () => {
-  document.querySelector(".facedetection").play();
-};
-
-const facedetection_stop = () => {
-  document.querySelector(".facedetection").pause();
-  document.querySelector(".facedetection").currentTime = 0;
 };
 
 //THREE TEN - CREATIVE MAGAZINE
@@ -97,7 +97,7 @@ function Projects() {
           <br />
           <a
             className="website-link"
-            href="https://color-spot.herokuapp.com/"
+            href="https://color-spot.space/"
             target="_blank"
             rel="noopener noreferrer"
           >
