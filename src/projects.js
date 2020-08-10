@@ -92,7 +92,7 @@ function Projects() {
           <br />
           <span className="tech">
             Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL, Google Auth,
-            Material-UI, Jest
+            Material-UI, Google Analytics, Jest
           </span>
           <br />
           <a
