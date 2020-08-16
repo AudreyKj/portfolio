@@ -257,12 +257,12 @@ div.close:hover {
 
 p.about-text {
   font-size: 1.5rem;
-  line-height: 1.2;
-  text-align: center;
+  line-height: 1.25;
   color: #ccc;
 
   margin: 0;
   padding-top: 5px;
+  padding-left: 10px;
 }
 
 @media (max-width: 350px) {
@@ -274,6 +274,13 @@ p.about-text {
 @media (max-height: 400px) {
   p.about-text {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  p.about-text {
+    text-align: center;
+    padding-left: 0;
   }
 }
 
@@ -423,6 +430,7 @@ div.project-first {
   color: #333;
 
   border-bottom: 1px solid #2b2b2b;
+  padding-bottom: 30px;
 }
 
 div.project-2 {
@@ -435,6 +443,7 @@ div.project-2 {
 
   border-bottom: 1px solid #2b2b2b;
   color: #333;
+  padding-bottom: 30px;
 }
 
 div.project-last {
