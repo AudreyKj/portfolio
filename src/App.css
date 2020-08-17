@@ -430,7 +430,7 @@ div.project-first {
   color: #333;
 
   border-bottom: 1px solid #2b2b2b;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 div.project-2 {
@@ -443,7 +443,7 @@ div.project-2 {
 
   border-bottom: 1px solid #2b2b2b;
   color: #333;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 div.project-last {
@@ -480,13 +480,60 @@ div.project-last {
   }
 }
 
-video,
-video.threeten,
-video.fiveforty {
+video {
   -webkit-box-shadow: 1px 1px 19px 2px rgba(51, 51, 51, 0.7);
   box-shadow: 1px 1px 19px 2px rgba(51, 51, 51, 0.7);
   width: 600px;
   height: auto;
+}
+
+@media (min-width: 1900px) {
+  video {
+    width: 1000px;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  video {
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) and (max-height: 450px) {
+  video {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  video {
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  video {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  video {
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media (max-width: 350px) {
+  video {
+    width: 250px;
+    height: auto;
+  }
 }
 
 video.threeten {
@@ -499,79 +546,6 @@ video.threeten {
   }
   video.threeten {
     margin-left: 0;
-  }
-}
-
-@media (max-width: 900px) {
-  video,
-  video.threeten,
-  video.fiveforty {
-    width: 450px;
-    height: auto;
-  }
-}
-
-@media (min-width: 1900px) {
-  video,
-  video.threeten,
-  video.fiveforty {
-    width: 1000px;
-    height: auto;
-  }
-}
-
-@media (max-width: 750px) {
-  video,
-  video.threeten,
-  video.fiveforty {
-    width: 500px;
-    height: auto;
-  }
-}
-
-@media (max-width: 800px) and (max-height: 450px) {
-  video,
-  video.threeten,
-  video.fiveforty {
-    width: 400px;
-    height: auto;
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 615px) {
-  video,
-  video.threeten,
-  video.fiveforty {
-    width: 400px;
-    height: auto;
-  }
-}
-
-@media (max-width: 500px) {
-  video,
-  video.threeten,
-  video.fiveforty {
-    width: 400px;
-    height: auto;
-  }
-}
-
-@media (max-width: 420px) {
-  video,
-  video.threeten,
-  video.fiveforty {
-    width: 350px;
-    height: auto;
-  }
-}
-
-@media (max-width: 350px) {
-  video,
-  video.threeten,
-  video.fiveforty {
-    width: 250px;
-    height: auto;
   }
 }
 
