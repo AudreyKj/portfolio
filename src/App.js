@@ -53,6 +53,10 @@ function App(props) {
             exchange app
           </a>
 
+          <a href="#spacex" className="project-index-links">
+            spaceX app
+          </a>
+
           <a href="#facedetection" className="project-index-links">
             face-detection app
           </a>

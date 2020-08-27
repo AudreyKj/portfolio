@@ -10,6 +10,7 @@ import sign_cause from "./videos/sign-cause.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
 import threeten_video from "./videos/threeten_new.mp4";
 import fiveforty_video from "./videos/fiveforty-new.mp4";
+import spacex_video from "./videos/spacex.mp4";
 
 //COLOR SPOT
 const color_spot_play = () => {
@@ -19,6 +20,16 @@ const color_spot_play = () => {
 const color_spot_stop = () => {
   document.querySelector(".color-spot").pause();
   document.querySelector(".color-spot").currentTime = 0;
+};
+
+//SPACEX
+const spacex_play = () => {
+  document.querySelector("video.spacex").play();
+};
+
+const spacex_stop = () => {
+  document.querySelector("video.spacex").pause();
+  document.querySelector("video.spacex").currentTime = 0;
 };
 
 //EXCHANGE
@@ -166,6 +177,59 @@ function Projects() {
           <Fade>
             <video className="exchange" muted playsInline loop>
               <source src={social_network} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Fade>
+        </div>
+      </div>
+
+      <div className="project-2" id="spacex">
+        <p className="description">
+          <span className="project-title"> SPACE X APP </span>
+          <br /> Web app using the&nbsp;
+          <a
+            className="website-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/r-spacex/SpaceX-API"
+          >
+            REST API spaceX.
+          </a>
+          <br />
+          Featuring infinite scroll, search, filter, and data visualization.
+          <br />
+          <span className="tech">
+            Tech: SASS/SCSS, React, JavaScript, Redux, Redux Thunk, chart.js,
+            styled-components, Jest
+          </span>
+          <br />
+          <a
+            className="website-link"
+            href="https://spacex-spacex.netlify.app/search"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            live site
+          </a>
+          &nbsp; | &nbsp;
+          <a
+            className="website-link"
+            href="https://github.com/AudreyKj/spacex-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </p>
+
+        <div className="image-project-container">
+          <Waypoint
+            onEnter={() => spacex_play()}
+            onLeave={() => spacex_stop()}
+          />
+          <Fade>
+            <video className="spacex" muted playsInline loop>
+              <source src={spacex_video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Fade>
@@ -382,7 +446,7 @@ function Projects() {
       <footer>
         <a
           className="link-footer"
-          href="https://github.com/AudreyKj"
+          href="https://github.com/AudreyKj?tab=repositories&q=&type=public&language="
           target="_blank"
           rel="noopener noreferrer"
         >
