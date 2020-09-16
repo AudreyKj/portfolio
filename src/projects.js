@@ -102,8 +102,8 @@ function Projects() {
           The app also features an admin dashboard using data visualization.
           <br />
           <span className="tech">
-            Tech: SASS/SCSS, React, Node.js, chart.js, PostgreSQL, Google Auth,
-            Material-UI, Google Analytics, Jest
+            Tech: SASS/SCSS, Styled Components, React, Node.js, chart.js,
+            PostgreSQL, Google Auth, Material-UI, Jest
           </span>
           <br />
           <a
