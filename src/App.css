@@ -464,6 +464,12 @@ div.project-last {
   }
 }
 
+div.image-project-container-magazine {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1200px) {
   div.image-project-container-magazine {
     display: flex;
@@ -561,6 +567,16 @@ p.description {
 @media (min-width: 2000px) {
   p.description {
     font-size: 3rem;
+  }
+}
+
+.marginTop {
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .marginTop {
+    margin-top: 40px;
   }
 }
 

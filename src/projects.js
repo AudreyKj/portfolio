@@ -10,6 +10,7 @@ import imageboard_video from "./videos/imageboard.mp4";
 import threeten_video from "./videos/threeten_new.mp4";
 import fiveforty_video from "./videos/fiveforty-new.mp4";
 import spacex_video from "./videos/spacex.mp4";
+import goldenhour_video from "./videos/goldenhour.mp4";
 
 //COLOR SPOT
 const color_spot_play = () => {
@@ -59,6 +60,16 @@ const covid_play = () => {
 const covid_stop = () => {
   document.querySelector(".covid").pause();
   document.querySelector(".covid").currentTime = 0;
+};
+
+//GOLDEN HOUR - CREATIVE MAGAZINE
+const goldenhour_play = () => {
+  document.querySelector(".goldenhour").play();
+};
+
+const goldenhour_stop = () => {
+  document.querySelector(".goldenhour").pause();
+  document.querySelector(".goldenhour").currentTime = 0;
 };
 
 //THREE TEN - CREATIVE MAGAZINE
@@ -311,32 +322,24 @@ function Projects() {
         <p className="description">
           <span className="project-title">WEBSITES FOR CREATIVE MAGAZINE</span>
           <br />
-          I've designed and developed 2 creative websites with interactive UX
+          I've designed and developed 3 creative websites with interactive UX
           for an online magazine project.
           <br />
           <span className="tech">
-            Tech: HTML, CSS, JavaScript, jQuery, Three.js
+            Tech - issue III: React, CSS, Threejs React-Fiber <br />
+            Tech - issue I and II: HTML, CSS, JavaScript, jQuery, Three.js
           </span>
           <br />
-          ISSUE I:&nbsp;
+          ISSUE III:&nbsp;
           <a
             className="website-link"
-            href="https://www.syntheticvelvet-fiveforty.com/"
+            href="https://www.syntheticvelvet-goldenhour.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             live site
           </a>
           &nbsp; | &nbsp;
-          <a
-            className="website-link"
-            href="https://github.com/AudreyKj/Five-Forty"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <br />
           ISSUE II:&nbsp;
           <a
             className="website-link"
@@ -347,16 +350,21 @@ function Projects() {
             live site
           </a>
           &nbsp; | &nbsp;
+          ISSUE I:&nbsp;
           <a
             className="website-link"
-            href="https://github.com/AudreyKj/Three-Ten"
+            href="https://www.syntheticvelvet-fiveforty.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
+            live site
           </a>
         </p>
         <div className="image-project-container-magazine">
+        <Waypoint
+            onEnter={() => goldenhour_play()}
+            onLeave={() => goldenhour_stop()}
+          />
           <Waypoint
             onEnter={() => fiveforty_play()}
             onLeave={() => fiveforty_stop()}
@@ -366,14 +374,20 @@ function Projects() {
             onLeave={() => threeten_stop()}
           />
           <Fade>
-            <video className="fiveforty" muted playsInline loop>
-              <source src={fiveforty_video} type="video/mp4" />
+            <video className="goldenhour" muted playsInline loop>
+              <source src={goldenhour_video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Fade>
           <Fade>
             <video className="threeten" muted playsInline loop>
               <source src={threeten_video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Fade>
+          <Fade>
+            <video className="fiveforty marginTop" muted playsInline loop>
+              <source src={fiveforty_video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Fade>
