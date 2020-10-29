@@ -6,7 +6,6 @@ import { Waypoint } from "react-waypoint";
 import corona_video from "./videos/covid-app.mp4";
 import color_spot from "./videos/color-spot.mp4";
 import social_network from "./videos/exchange-network.mp4";
-import sign_cause from "./videos/sign-cause.mp4";
 import imageboard_video from "./videos/imageboard.mp4";
 import threeten_video from "./videos/threeten_new.mp4";
 import fiveforty_video from "./videos/fiveforty-new.mp4";
@@ -50,16 +49,6 @@ const facedetection_play = () => {
 const facedetection_stop = () => {
   document.querySelector(".facedetection").pause();
   document.querySelector(".facedetection").currentTime = 0;
-};
-
-//SIGN FOR CAUSE
-const signcause_play = () => {
-  document.querySelector(".signcause").play();
-};
-
-const signcause_stop = () => {
-  document.querySelector(".signcause").pause();
-  document.querySelector(".signcause").currentTime = 0;
 };
 
 //COVID
@@ -312,58 +301,6 @@ function Projects() {
           <Fade>
             <video className="covid" muted playsInline loop>
               <source src={corona_video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </Fade>
-        </div>
-      </div>
-
-      <div className="project-2" id="signcause">
-        <p className="description">
-          <span className="project-title"> SIGN FOR CAUSE APP </span> <br />
-          App inspired by&nbsp;
-          <a
-            className="website-link"
-            href="https://www.change.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            change.org.
-          </a>
-          <br />
-          Users register, create a profile, and sign for a cause.
-          <br />
-          <span className="tech">
-            Tech: HTML, CSS, Node.js, Handlebars.js, PostgreSQL, SuperTest
-          </span>
-          <br />
-          <a
-            className="website-link"
-            href="https://sign-for-cause.herokuapp.com/petition"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            live site
-          </a>
-          &nbsp; | &nbsp;
-          <a
-            className="website-link"
-            href="https://github.com/AudreyKj/sign-for-cause"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
-
-        <div className="image-project-container">
-          <Waypoint
-            onEnter={() => signcause_play()}
-            onLeave={() => signcause_stop()}
-          />
-          <Fade>
-            <video className="signcause" muted playsInline loop>
-              <source src={sign_cause} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Fade>
