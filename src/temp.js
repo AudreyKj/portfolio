@@ -4,7 +4,7 @@ function Temp() {
   return (
     <div className="temp">
       <h1>
-        I'm currently updating my portfolio - please come back in a few hours!
+        I'm currently updating my portfolio - please come back soon!
       </h1>
       <p className="about-text">
         In the meantime, contact me on: <br />
