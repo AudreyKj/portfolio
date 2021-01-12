@@ -29,7 +29,7 @@ body {
 
 /* TEMPORARY PAGE */
 div.temp {
-  background-color: #4a5d5a;
+  background-color: #000000;
   color: #f7f7f7;
   width: 100%;
   height: 100%;
@@ -38,8 +38,9 @@ div.temp {
   padding-left: 30px;
 }
 
-h1 {
+h1.temp {
   font-weight: 300;
+  font-size: 1.5rem;
 }
 
 /* HOMEPAGE */
